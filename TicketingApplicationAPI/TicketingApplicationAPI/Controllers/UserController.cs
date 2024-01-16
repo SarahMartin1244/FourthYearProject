@@ -18,6 +18,30 @@ namespace TicketingApplicationAPI.Controllers
             _authContext = appDbContext;
         }
 
+        // Endpoint to authenticate user login.
+        [HttpPost("authenticate")]
+        public async Task<IActionResult> Authenticate([FromBody] User userObj)
+        {
+            // If user tries to send a blank form, return a bad request.
+            if (userObj == null)
+                return BadRequest();
+
+            // Check if the user is in the database.
+            var user = await _authContext.Users.FirstOrDefaultAsync(x => x.Username == userObj.Username && x.Password == userObj.Password);
+
+            // If user isn't in the database, return a not found response.
+            if (user == null)
+                return NotFound(new { Message = "User Doesnt Exist" });
+
+            // If authentication is successful, return an Ok response with a success message.
+            return Ok(new
+            {
+                Message = "Login Successful"
+            });
+        }
+
+
+
         [HttpPost("SignUp")]
         public async Task<IActionResult> SignUp([FromBody] User userObj)
         {
