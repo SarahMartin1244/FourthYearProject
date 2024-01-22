@@ -11,6 +11,7 @@ using TicketingApplicationAPI.Models;
 using System;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TicketingApplicationAPI.Controllers
 {
@@ -174,11 +175,15 @@ namespace TicketingApplicationAPI.Controllers
         }
 
 
+        [Authorize]   // to protect API
         [HttpGet]
-        public async Task<ActionResult<User>> GetAllUsers()
+        public async Task<ActionResult<User>> GetUsers()
         {
             return Ok(await _authContext.Users.ToListAsync());
         }
+
+
+
     }
 
 
