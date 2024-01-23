@@ -1,7 +1,12 @@
-<button (click) = "logout()" class = "btn btn-danger">Logout</button>
-<h1>Dashboard</h1>
 
-<ul *ngFor  ="let user of users">
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Dashboard</a>
+      <div>
+        <h4>Hello, {{fullName}}</h4>
+      </div>
+    </div>
+  </nav>
 
-    <li>{{user.username}}</li>
-</ul>
+  
+    <button class="btn btn-primary" (click)="logout()">Sign Out</button>
