@@ -6,7 +6,8 @@ import ValidateForm from '../../helpers/validateform';
 @Component({
   selector: 'app-ticket',
   templateUrl: './ticket.component.html',
- // styleUrls: ['./ticket.component.css']
+  styleUrls: ['./ticket.component.scss']
+  
 })
 export class TicketComponent implements OnInit {
 
