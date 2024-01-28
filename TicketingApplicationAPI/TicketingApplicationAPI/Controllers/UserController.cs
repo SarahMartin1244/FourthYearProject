@@ -48,13 +48,12 @@ namespace TicketingApplicationAPI.Controllers
 
                 user.Token = CreateJwt(user);
 
-
                 // If authentication is successful, return an Ok response with a success message.
                 return Ok(new
                 {
                     Token = user.Token,
                     Message = "Login successful"
-                }) ;
+                });
             }
             catch (Exception ex)
             {
@@ -62,6 +61,7 @@ namespace TicketingApplicationAPI.Controllers
                 return StatusCode(500, new { Message = "Internal Server Error", Error = ex.ToString() });
             }
         }
+
 
 
         [HttpPost("SignUp")]
@@ -156,20 +156,24 @@ namespace TicketingApplicationAPI.Controllers
         {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes("veryverysecret.....");
-            var identify = new ClaimsIdentity(new Claim[]
+           
+
+            var identity = new ClaimsIdentity(new Claim[]
             {
-                new Claim(ClaimTypes.Role, user.Role),
-                new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
+        new Claim(ClaimTypes.Role, user.Role),
+        new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
+        new Claim("UserId", user.Id.ToString()) // Add the user ID claim
             });
 
             var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = identify,
+                Subject = identity,
                 Expires = DateTime.Now.AddDays(1),
                 SigningCredentials = credentials
             };
+
             var token = jwtTokenHandler.CreateToken(tokenDescriptor);
             return jwtTokenHandler.WriteToken(token);
         }
@@ -181,6 +185,9 @@ namespace TicketingApplicationAPI.Controllers
         {
             return Ok(await _authContext.Users.ToListAsync());
         }
+
+
+
 
 
 

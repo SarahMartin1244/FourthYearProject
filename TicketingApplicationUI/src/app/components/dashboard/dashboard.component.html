@@ -1,12 +1,14 @@
-
 <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand">Dashboard</a>
-      <div>
-        <h4>Hello, {{fullName}}</h4>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand">Dashboard</a>
+    <div class="user-info-container">
+      <h4>
+        {{fullName}}
+        <span class="fa fa-user p-2"></span>
+      </h4>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  
-    <button class="btn btn-primary" (click)="logout()">Sign Out</button>
+<button class="btn btn-primary" (click)="CreateTicket()">Create Ticket</button>
+<button class="btn btn-primary" (click)="logout()">Sign Out</button>

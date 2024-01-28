@@ -9,10 +9,15 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
   private baseUrl: string = "https://localhost:7134/api/User/";
+  private ticketUrl = "https://localhost:7134/api/Ticket/";
   private userPayload: any;
 
   constructor(private http: HttpClient, private router: Router) {
     this.userPayload = this.decodedToken();
+  }
+
+  createTicket(ticketObj: any): Observable<any> {
+    return this.http.post<any>(`${this.ticketUrl}createTicket`, ticketObj);
   }
 
   signUp(userObj: any): Observable<any> {
@@ -38,6 +43,14 @@ export class AuthService {
   signOut() {
     localStorage.clear();
     this.router.navigate(['login']);
+  }
+
+  logTicket() {
+    this.router.navigate(['ticket']);
+  }
+
+  onDashboard() {
+    this.router.navigate(['dashboard']);
   }
 
   // Add getUsers method to fetch users
