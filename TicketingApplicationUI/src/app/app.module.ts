@@ -11,6 +11,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
 import { TicketComponent } from './components/ticket/ticket.component';
+import { ViewTicketsComponent } from './components/view-tickets/view-tickets.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TicketComponent } from './components/ticket/ticket.component';
     LoginComponent,
     SignupComponent,
     DashboardComponent,
-    TicketComponent
+    TicketComponent,
+    ViewTicketsComponent
   ],
   imports: [
     BrowserModule,
