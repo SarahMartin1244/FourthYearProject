@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './view-tickets.component.scss'
 })
 export class ViewTicketsComponent {
+  constructor() {}
+
+  ngOnInit() {}
+
+  
+  
 
 }

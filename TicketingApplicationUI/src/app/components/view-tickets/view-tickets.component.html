@@ -1,1 +1,57 @@
-<p>view-tickets works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Tickets Dashboard</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Tickets Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sample Ticket 1</td>
+                <td>This is a sample ticket description.</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sample Ticket 2</td>
+                <td>This is another sample ticket description.</td>
+                <td>Closed</td>
+            </tr>
+           
+        </tbody>
+    </table>
+</body>
+</html>
+

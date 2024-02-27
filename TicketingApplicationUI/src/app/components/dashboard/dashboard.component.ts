@@ -33,4 +33,8 @@ export class DashboardComponent implements OnInit {
   CreateTicket() {
    this.auth.logTicket();
   }
+
+  ViewTickets() {
+    this.auth.viewTickets();
+  }
 }

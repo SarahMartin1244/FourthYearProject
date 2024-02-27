@@ -53,6 +53,10 @@ export class AuthService {
     this.router.navigate(['dashboard']);
   }
 
+  viewTickets() {
+    this.router.navigate(['view-tickets']);
+  }
+
   // Add getUsers method to fetch users
   GetUsers(): Observable<any[]> {
     return this.http.get<any[]>(`${this.baseUrl}GetUsers`);
