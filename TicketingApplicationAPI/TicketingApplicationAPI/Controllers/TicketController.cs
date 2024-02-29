@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using TicketingApplicationAPI.Context;
@@ -67,5 +69,22 @@ namespace TicketingApplicationAPI.Controllers
                 return StatusCode(500, new { Message = "Internal Server Error", Error = ex.ToString() });
             }
         }
+        [HttpGet("GetTicketsForUser/{userId}")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsForUser(int userId)
+        {
+            // Retrieve the tickets for the specified user ID
+            var tickets = await _authContext.Tickets
+                .Where(t => t.UserID == userId)
+                .ToListAsync();
+
+            return Ok(tickets);
+        }
+
+
+
+
+
+
+
     }
 }

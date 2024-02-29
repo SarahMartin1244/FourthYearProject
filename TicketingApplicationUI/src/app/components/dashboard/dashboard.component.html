@@ -15,3 +15,57 @@
   <button class="btn btn-primary" (click)="ViewTickets()">View Tickets</button>
   <button class="btn btn-primary" (click)="logout()">Sign Out</button>
 </div>
+
+<div class="sidebar">
+  <h2>Ticket Categories</h2>
+  <ul>
+    <li class="ticket-category">Category 1</li>
+    <li class="ticket-category">Category 2</li>
+    <li class="ticket-category">Category 3</li>
+    <!-- Add more categories here -->
+  </ul>
+</div>
+
+<div class="tickets-container">
+  <h2>Tickets</h2>
+  <div class="row header-row">
+    <div class="col">
+      <p>Ticket Subject</p>
+    </div>
+    <div class="col">
+      <p>Ticket Description</p>
+    </div>
+    <div class="col">
+      <p>Priority</p>
+    </div>
+    <div class="col">
+      <p>Assigned To</p>
+    </div>
+    <div class="col">
+      <p>Date Created</p>
+    </div>
+    <div class="col">
+      <p>Date Resolved</p>
+    </div>
+  </div>
+  <div class="row" *ngFor="let ticket of tickets">
+    <div class="col">
+      <p>{{ ticket.subject }}</p>
+    </div>
+    <div class="col">
+      <p>{{ ticket.description }}</p>
+    </div>
+    <div class="col">
+      <p>{{ ticket.priority }}</p>
+    </div>
+    <div class="col">
+      <p>{{ ticket.AssignedTo }}</p>
+    </div>
+    <div class="col">
+      <p>{{ ticket.DateCreated }}</p>
+    </div>
+    <div class="col">
+      <p>{{ ticket.DateResolved }}</p>
+    </div>
+  </div>
+</div>

@@ -187,6 +187,30 @@ namespace TicketingApplicationAPI.Controllers
         }
 
 
+        //[HttpGet("GetTicketsForUser")]
+        //public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsForUser(int userId)
+        //{
+        //    try
+        //    {
+        //        // Retrieve the tickets for the logged-in user
+        //        var tickets = await _authContext.Tickets
+        //            .Where(t => t.User.Id == userId)
+        //            .ToListAsync();
+
+        //        return Ok(tickets);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Exception: {ex}");
+        //        return StatusCode(500, new { Message = "Internal Server Error", Error = ex.Message });
+        //    }
+        //}
+
+
+
+
+
+
 
 
 

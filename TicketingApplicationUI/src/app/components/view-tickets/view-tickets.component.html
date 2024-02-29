@@ -4,54 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Tickets Dashboard</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="view-tickets.component.scss">
 </head>
 <body>
-    <h1>User Tickets Dashboard</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Ticket ID</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Sample Ticket 1</td>
-                <td>This is a sample ticket description.</td>
-                <td>Open</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Sample Ticket 2</td>
-                <td>This is another sample ticket description.</td>
-                <td>Closed</td>
-            </tr>
-           
-        </tbody>
-    </table>
+    <div class="sidebar">
+        <h2>Ticket Categories</h2>
+        <ul>
+            <li class="ticket-category">Category 1</li>
+            <li class="ticket-category">Category 2</li>
+            <li class="ticket-category">Category 3</li>
+            <!-- Add more categories here -->
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Tickets</h1>
+        <div class="ticket">
+            <div class="ticket-title">Ticket 1</div>
+            <div class="ticket-details">
+                <span class="ticket-status">Status: Open</span>
+                <span>Create Date: 2022-01-01</span>
+                <span class="ticket-priority">Priority: High</span>
+                <span>Owner: John Doe</span>
+            </div>
+            <div class="ticket-description">This is a sample ticket description.</div>
+        </div>
+        <div class="ticket">
+            <div class="ticket-title">Ticket 2</div>
+            <div class="ticket-details">
+                <span class="ticket-status">Status: Closed</span>
+                <span>Create Date: 2022-01-02</span>
+                <span class="ticket-priority">Priority: Medium</span>
+                <span>Owner: Jane Doe</span>
+            </div>
+            <div class="ticket-description">This is another sample ticket description.</div>
+        </div>
+        <!-- Add more tickets here -->
+    </div>
 </body>
 </html>
-

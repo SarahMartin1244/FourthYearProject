@@ -84,6 +84,21 @@ const token = this.getToken()!;
 
   }
 
+  getUserId() {
+    if(this.userPayload) {
+      return this.userPayload.id;
+    }
+  }
+
+  getLoggedInUserId() {
+    this.userPayload = this.decodedToken();
+    console.log('userPayload:', this.userPayload);
+    return this.userPayload.UserId;
+  }
+  
+  
+  
+
 
   // getfullNameFromToken(): string | null {
   //   const firstName = this.userPayload ? this.userPayload.FirstName : null;
