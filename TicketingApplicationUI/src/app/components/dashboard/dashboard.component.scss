@@ -28,6 +28,7 @@
   padding: 5px;
   width: 70%;
   margin: auto;
+  margin-left: 25%; /* Adjust the margin-left */
   overflow: auto; 
 }
 
@@ -39,7 +40,22 @@
 
 /* Ticket table cell styling */
 .ticket-table-cell {
-  padding: 5px;
+  padding: 10px; /* Add padding to all sides of the cell */
   font-size: 10px;
   overflow: auto; /* Add this line */
+}
+
+.tickets-container {
+  position: relative;
+}
+
+.create-ticket-btn-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .form-inline {
+  margin-left: auto;
+  margin-right: auto;
 }

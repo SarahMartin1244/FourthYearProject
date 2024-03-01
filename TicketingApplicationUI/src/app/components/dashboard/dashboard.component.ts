@@ -7,12 +7,14 @@ import { UserStoreService } from '../../services/user-store.service';
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
+
 })
 
 export class DashboardComponent implements OnInit {
-
+ isDropdownOpen = false;
   public users: any = [];
   public tickets: any = [];
+  public departments: any = [];
 
   public fullName: string = "";
   public subject: string = "";
@@ -55,6 +57,12 @@ export class DashboardComponent implements OnInit {
         }
       );
     }
+  }
+
+  
+
+  toggleDropdown(event: MouseEvent) {
+    this.isDropdownOpen = event.type === 'mouseenter';
   }
 
   // Logout the user
