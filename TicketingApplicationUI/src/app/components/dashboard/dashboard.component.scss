@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px; /* Adjust the margin */
+  margin-top: 100px; /* Adjusts the margin */
 }
 
 /* Style for buttons */
 .button-container button {
-  margin-bottom: 10px; /* Adjust the margin between buttons*/
+  margin-bottom: 10px; /* Adjusts the margin between buttons*/
 }
 
 /* Sidebar styling */
@@ -28,21 +28,21 @@
   padding: 5px;
   width: 70%;
   margin: auto;
-  margin-left: 25%; /* Adjust the margin-left */
+  margin-left: 25%; /* Adjusted the margin-left */
   overflow: auto; 
 }
 
 /* Ticket table header styling */
 .ticket-table-header {
   background-color: #f2f2f2;
-  overflow: auto; /* Add this line */
+  overflow: auto; 
 }
 
 /* Ticket table cell styling */
 .ticket-table-cell {
-  padding: 15px; /* Add padding to all sides of the cell */
+  padding: 15px; /* Adds padding to all sides of the cell */
   font-size: 10px;
-  overflow: auto; /* Add this line */
+  overflow: auto; 
 }
 
 .tickets-container {
