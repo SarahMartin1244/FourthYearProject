@@ -59,8 +59,6 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-  
-
   toggleDropdown(event: MouseEvent) {
     this.isDropdownOpen = event.type === 'mouseenter';
   }
