@@ -1,14 +1,17 @@
+/* Set the body to use flex layout and specify the font family */
 body {
     display: flex;
     font-family: Arial, sans-serif;
 }
 
+/* Sidebar styles */
 .sidebar {
     width: 20%;
     padding: 20px;
     background-color: #f2f2f2;
 }
 
+/* Main content area styles */
 .content {
     width: 80%;
     padding: 20px;
@@ -17,37 +20,45 @@ body {
     grid-gap: 20px;
 }
 
+/* Styles for ticket categories */
 .ticket-category {
     margin-bottom: 10px;
 }
 
+/* Styles for individual tickets */
 .ticket {
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
 }
 
+/* Styles for ticket titles */
 .ticket-title {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+/* Styles for ticket details */
 .ticket-details {
     margin-bottom: 10px;
 }
 
+/* Styles for ticket details spans */
 .ticket-details span {
     margin-right: 10px;
 }
 
+/* Styles for ticket descriptions */
 .ticket-description {
     margin-top: 5px;
 }
 
+/* Styles for ticket status */
 .ticket-status {
     color: green;
 }
 
+/* Styles for ticket priority */
 .ticket-priority {
     color: red;
 }

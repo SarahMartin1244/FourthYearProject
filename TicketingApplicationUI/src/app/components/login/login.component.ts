@@ -20,18 +20,21 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder, private auth: AuthService, private router: Router, private userStore: UserStoreService) { }
   
   ngOnInit(): void {
+    // Initialize the login form with username and password fields
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
     });
   }
 
+  // Function to toggle password visibility
   hideShowPass() {
     this.isText = !this.isText;
     this.eyeIcon = this.isText ? "fa-eye-slash" : "fa-eye";
     this.type = this.isText ? "text" : "password";
   }
 
+  // Function to handle login
   onLogin() {
     if (this.loginForm.valid) {
       console.log(this.loginForm.value)

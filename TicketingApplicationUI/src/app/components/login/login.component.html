@@ -1,43 +1,58 @@
-
 <div class="outer">
+    <!-- Outer container -->
     <div class="container">
+        <!-- Inner container -->
         <div class="row">
+            <!-- Row -->
             <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <!-- Column -->
                 <div class="panel border bg-white">
+                    <!-- Panel -->
                     <div class="panel-heading">
+                        <!-- Panel heading -->
                         <h3 class="pt-3 font-weight-bold">Login</h3>
                     </div>
                     <div class="panel-body p-3">
+                        <!-- Panel body -->
                         <form [formGroup]="loginForm">
+                            <!-- Form -->
                             <div class="form-group pt-3">
+                                <!-- Form group -->
                                 <div class="input-field" [class.error]="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username') ">
+                                    <!-- Input field -->
                                     <span class="fa fa-user p-2"></span>
                                     <input formControlName="username" type="text" placeholder="Username">
                                 </div>
                             </div>
                             <small *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')"  class="text-danger">*Username is required</small>
+                            <!-- Small error message -->
                             <div class="form-group pt-3">
+                                <!-- Form group -->
                                 <div class="input-field" [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password') ">
+                                    <!-- Input field -->
                                     <span class="fa fa-lock p-2"></span>
                                     <input formControlName="password" [type]="type" placeholder="Password">
                                     <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
                                 </div>
-                                
                             </div>
                             <small  *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')"    class ="text-danger">*Password is required</small>
+                            <!-- Small error message -->
                             <div class="form-inline fr mt-4">
+                                <!-- Form inline -->
                                 <a id="forget" class="font-weight-bold">Forgot Password?</a>
                             </div>
                             <button (click)="onLogin()"  type="submit" class="btn btn-primary btn-block mt-4 w-100">Login</button>
+                            <!-- Login button -->
                             <div class="text-center pt-4 text-muted">Create An Account (Administrators:) <a id="forget" routerLink="/signup">Create Account</a></div>
+                            <!-- Create account link -->
                         </form>
                     </div>
                     <div class="mx-3 my-2 py-2 bordert">
+                        <!-- Panel footer -->
                         <div class="text-center py-3">
-                            
+                            <!-- Text center -->
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

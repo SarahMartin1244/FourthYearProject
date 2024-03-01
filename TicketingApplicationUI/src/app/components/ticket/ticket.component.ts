@@ -16,6 +16,7 @@ export class TicketComponent implements OnInit {
   ticketCreated: boolean = false;
 
   constructor(private fb: FormBuilder, private auth: AuthService, private router: Router, private userStore: UserStoreService) {
+    // Initialize the ticket form with validation rules
     this.ticketForm = this.fb.group({
       subject: ['', Validators.required],
       priority: ['', Validators.required],
@@ -25,59 +26,12 @@ export class TicketComponent implements OnInit {
 
   ngOnInit() {}
 
-  // onCreateTicket() {
-  //   if (this.ticketForm.valid) {
-  //     const ticketData = this.ticketForm.value;
-  //     console.log('Creating ticket:', ticketData);
-
-  //     this.auth.createTicket(ticketData).subscribe(
-  //       data => {
-  //         console.log('Ticket created successfully');
-  //         this.ticketCreated = true; // Set the flag to true
-  //         this.ticketForm.reset();
-  //         // Optionally, you can redirect to another page after successful creation.
-  //         // this.router.navigate(['dashboard']);
-  //       },
-  //       err => {
-  //         console.error('Error creating ticket:', err);
-  //       }
-  //     );
-  //   }
-  // }
-
-  // onLogin() {
-  //   if (this.loginForm.valid) {
-  //     console.log(this.loginForm.value)
-
-  //     // Send object to the database
-  //     this.auth.login(this.loginForm.value)
-  //       .subscribe({
-  //         next: (res) => {
-  //           alert(res.message);
-  //           this.loginForm.reset();
-  //           this.auth.storeToken(res.token);
-  //           const tokenPayload = this.auth.decodedToken();
-  //           this.userStore.setFullNameForStore(tokenPayload.name);
-  //           this.userStore.setRoleForStore(tokenPayload.role);
-  //           this.router.navigate(['dashboard']);
-  //         },
-  //         error: (err) => {
-  //           alert(err?.error.message);
-  //         }
-  //       });
-  //   } else {
-  //     // Show error message
-  //     console.log("Invalid form");
-  //     ValidateForm.validateAllFormFields(this.loginForm);
-  //     alert("Invalid form");
-  //   }
-  // }
-
-
+  // Function to handle ticket creation
   onCreateTicket() {
     if (this.ticketForm.valid) {
       const ticketData = this.ticketForm.value;
       
+      // Send ticket data to the backend
       this.auth.createTicket(ticketData).subscribe(
         (res) => {
           alert(res.message);
@@ -89,8 +43,8 @@ export class TicketComponent implements OnInit {
       );
     }
   }
-  
 
+  // Function to navigate to the dashboard
   toDashboard() {
     this.auth.onDashboard();
   }

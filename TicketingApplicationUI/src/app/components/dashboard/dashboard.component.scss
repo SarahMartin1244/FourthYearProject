@@ -1,14 +1,17 @@
+/* Container for buttons */
 .button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px; /* Adjust the margin as needed */
+  margin-top: 100px; /* Adjust the margin */
 }
 
+/* Style for buttons */
 .button-container button {
-  margin-bottom: 10px; /* Adjust the margin between buttons as needed */
+  margin-bottom: 10px; /* Adjust the margin between buttons*/
 }
 
+/* Sidebar styling */
 .sidebar {
   float: left;
   position: absolute;
@@ -16,22 +19,25 @@
   padding: 20px;
   width: 20%;
   background-color: #f2f2f2;
-  overflow: auto; /* Add this line */
+  overflow: auto; 
 }
 
+/* Ticket container styling */
 .tickets-container.ticket-box {
   border: 1px solid #ccc;
   padding: 5px;
   width: 70%;
   margin: auto;
-  overflow: auto; /* Add this line */
+  overflow: auto; 
 }
 
+/* Ticket table header styling */
 .ticket-table-header {
   background-color: #f2f2f2;
   overflow: auto; /* Add this line */
 }
 
+/* Ticket table cell styling */
 .ticket-table-cell {
   padding: 5px;
   font-size: 10px;

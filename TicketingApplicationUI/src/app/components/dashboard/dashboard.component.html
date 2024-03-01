@@ -1,35 +1,39 @@
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
+    <!-- Navbar brand -->
     <a class="navbar-brand">Dashboard</a>
     <div class="user-info-container">
-     
+      <!-- User info -->
     </div>
+    <!-- Dropdown menu -->
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-target aria-haspopup="true" aria-expanded="false">
         <span class="fa fa-user p-2"></span>
         {{ fullName }}
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <!-- Sign out button -->
         <a class="dropdown-item" href="#" (click)="logout()">Sign Out</a>
-       
       </div>
-      
     </div>
   </div>
 </nav>
 
-
+<!-- Button container -->
 <div class="button-container">
-
+  <!-- Create Ticket button -->
   <button class="btn btn-primary" (click)="CreateTicket()">Create Ticket</button>
+  <!-- View Tickets button -->
   <button class="btn btn-primary" (click)="ViewTickets()">View Tickets</button>
+  <!-- Sign out button -->
   <button class="btn btn-primary" (click)="logout()">Sign out</button>
-  
 </div>
 
+<!-- Sidebar -->
 <div class="sidebar">
   <h2>Ticket Categories</h2>
   <ul>
+    <!-- Ticket categories -->
     <li class="ticket-category">Category 1</li>
     <li class="ticket-category">Category 2</li>
     <li class="ticket-category">Category 3</li>
@@ -37,11 +41,12 @@
   </ul>
 </div>
 
+<!-- Tickets container -->
 <div class="tickets-container ticket-box">
-  <!-- put nav bar here -->
-
+  <!-- Tickets header -->
   <h2>Tickets</h2>
   <div class="row ticket-table-header">
+    <!-- Ticket table headers -->
     <div class="col ticket-table-cell">
       <p>Ticket Subject</p>
     </div>
@@ -64,6 +69,7 @@
       <p>Date Resolved</p>
     </div>
   </div>
+  <!-- Ticket table rows -->
   <div class="row ticket-table" *ngFor="let ticket of tickets">
     <div class="col ticket-table-cell">
       <p>{{ ticket.subject }}</p>
