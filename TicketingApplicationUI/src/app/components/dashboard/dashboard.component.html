@@ -26,46 +26,47 @@
   </ul>
 </div>
 
-<div class="tickets-container">
+<div class="tickets-container ticket-box">
   <h2>Tickets</h2>
-  <div class="row header-row">
-    <div class="col">
+  <div class="row ticket-table-header">
+    <div class="col ticket-table-cell">
       <p>Ticket Subject</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>Ticket Description</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>Priority</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>Assigned To</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>Date Created</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>Date Resolved</p>
     </div>
   </div>
-  <div class="row" *ngFor="let ticket of tickets">
-    <div class="col">
+  <div class="row ticket-table" *ngFor="let ticket of tickets">
+    <div class="col ticket-table-cell">
       <p>{{ ticket.subject }}</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>{{ ticket.description }}</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>{{ ticket.priority }}</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>{{ ticket.AssignedTo }}</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>{{ ticket.DateCreated }}</p>
     </div>
-    <div class="col">
+    <div class="col ticket-table-cell">
       <p>{{ ticket.DateResolved }}</p>
     </div>
   </div>
 </div>
+
