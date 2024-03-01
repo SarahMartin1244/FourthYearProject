@@ -12,9 +12,15 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
 import { TicketComponent } from './components/ticket/ticket.component';
 import { ViewTicketsComponent } from './components/view-tickets/view-tickets.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     LoginComponent,
     SignupComponent,
@@ -23,6 +29,9 @@ import { ViewTicketsComponent } from './components/view-tickets/view-tickets.com
     ViewTicketsComponent
   ],
   imports: [
+    BsDropdownModule.forRoot(),
+    CollapseModule.forRoot(),
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
