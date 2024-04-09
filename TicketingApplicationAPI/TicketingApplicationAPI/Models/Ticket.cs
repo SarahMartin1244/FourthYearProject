@@ -14,15 +14,22 @@ namespace TicketingApplicationAPI.Models
 
         [ForeignKey("UserID")]
         public virtual User User { get; set; }
+
         public string Subject { get; set; }
         public string Priority { get; set; }
         public string Description { get; set; }
-
         public string AssignedTo { get; set; } // will be foreign key 
 
         // Use DateTime for dateCreated
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime? DateCreated { get; set; } = DateTime.UtcNow;
+        public DateTime? DateCreated { get; set; } = DateTime.UtcNow.AddHours(1); /*DateTime.UtcNow;*/
         public string DateResolved { get; set; }
+
+        // Additional properties to access user's first and last names
+        [NotMapped] // Not mapped to the database
+        public string UserFirstName => User?.FirstName;
+
+        [NotMapped] // Not mapped to the database
+        public string UserLastName => User?.LastName;
     }
 }

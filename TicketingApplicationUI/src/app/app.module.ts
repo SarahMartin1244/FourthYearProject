@@ -21,6 +21,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import {MatTableModule} from '@angular/material/table';
     MatFormFieldModule,
     MatPaginatorModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },

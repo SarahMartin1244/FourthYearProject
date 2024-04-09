@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ticketID&Sequence_1",
+        "CategoryFound&Sequence_1",
+        "matchFound&Sequence_1",
+        "matchedCategoryID&Sequence_1",
+        "currentKeywords&Sequence_2",
+        "currentKeywordInKeywordTable&Sequence_2",
+        "ticketDescription&Sequence_1",
+        "categoriseTable&Sequence_1",
+        "ticketInfo&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

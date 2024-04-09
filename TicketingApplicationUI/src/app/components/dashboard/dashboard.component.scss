@@ -1,7 +1,7 @@
 /* Container for buttons */
 
 .createTicket {
-  margin-top: 10px; /* Adjust the margin */
+  margin-top: 60px; /* Adjust the margin */
   display: flex;
   justify-content: flex-end;
 }
@@ -15,6 +15,12 @@
 
 
 
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
 
 
@@ -38,6 +44,8 @@
     min-width: unset; /* Remove any minimum width constraint */
     max-width: unset; /* Remove any maximum width constraint */
     width: auto; /* Allow the width to adjust based on content */
+    margin-top: 0; /* Adjust top margin as needed */
+    margin-left: 0; /* Adjust left margin as needed */
   }
 
   .small-font {
@@ -48,9 +56,13 @@
   
 }
 
-.container{
+.container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto 0; /* Change the margin-top to 50px */
+  border: 1px solid #ccc; /* Add a 1px solid border with color #ccc */
+  padding: 20px; /* Optional: Add padding inside the border */
 }
+
+
 
 

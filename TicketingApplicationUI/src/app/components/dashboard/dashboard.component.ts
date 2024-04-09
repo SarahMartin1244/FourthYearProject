@@ -20,6 +20,7 @@ export class DashboardComponent implements OnInit {
   public dataSource = new MatTableDataSource<any>(); // Create a new MatTableDataSource
 
   public fullName: string = "";
+  public searchTerm: string = ''; // Search term input by the user
 
   constructor(
     private api: ApiService,
@@ -76,16 +77,18 @@ export class DashboardComponent implements OnInit {
     this.auth.viewTickets();
   }
 
-  displayedColumns: string[] = ['ticketId', 'subject', 'owner', 'priority', 'assignedTo', 'dateCreated', 'dateResolved'];
-
- 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
+  applyFilter() {
+    const filterValue = this.searchTerm.trim().toLowerCase();
+    this.dataSource.filterPredicate = (data, filter) => {
+      return data.subject.toLowerCase().includes(filter);
+    };
+    this.dataSource.filter = filterValue;
+    
+    // Reset paginator to first page
+    if (this.paginator) {
+      this.paginator.firstPage();
     }
   }
 
+  displayedColumns: string[] = ['ticketId', 'subject', 'owner', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status'];
 }
