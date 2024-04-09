@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Dashboard</a>
@@ -19,7 +20,7 @@
       </ul>
     </div>
     <form class="form-inline my-2 my-lg-0 mx-auto">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search (Or ticket ID)" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -35,99 +36,84 @@
 
 
 
-<!-- Button container -->
-<div class="button-container">
+
+
+
+
+
+
+<div class="createTicket">
   <!-- Create Ticket button -->
-  <!-- <button class="btn btn-primary" (click)="CreateTicket()">Create Ticket</button> -->
-  <!-- View Tickets button -->
-  <!-- <button class="btn btn-primary" (click)="ViewTickets()">View Tickets</button> -->
-  <!-- Sign out button -->
-  <!-- <button class="btn btn-primary" (click)="logout()">Sign out</button> -->
+  <button class="btn btn-primary" (click)="CreateTicket()">Create Ticket</button>
 </div>
 
-<!-- Sidebar -->
-<div class="sidebar">
-  <h2>Ticket Categories</h2>
-  <ul>
-    <!-- Ticket categories -->
-    <p><b> Business Support </b>
-    <li class="ticket-category">Laptop Re-Image</li>
-    <li class="ticket-category">Roaming Request - Laptop</li>
-    <li class="ticket-category">Equipment Returns</li>
-    <li class="ticket-category">Laptop Warranties</li>
-    <li class="ticket-category">Asset Register</li>
-    <li class="ticket-category">Mobile phones (New, Replacement)</li>
-    </p>
-    <p><b>Account Management</b>
-    <li class="ticket-category">Account Expired</li>
-    <li class="ticket-category">Leavers</li>
-    <li class="ticket-category">New Joiners Equipment</li>
-    </p>
 
-    <p><b>Software Problems</b>
-    <li class="ticket-category">Software Installation</li>
-    <li class="ticket-category">Application Support</li>
-    <li class="ticket-category">Operating System Maintenance</li>
-    </p>
 
-  </ul>
-</div>
 
-<div class="tickets-container ticket-box">
+
+
+<div class="tickets-container">
   <!-- Tickets header -->
   <h2>Tickets</h2>
-  <div class="create-ticket-btn-container">
-    <!-- Create Ticket button -->
-    <button class="btn btn-primary" (click)="CreateTicket()">Create Ticket</button>
-  </div>
-  <div class="row ticket-table-header">
-    <!-- Ticket table headers -->
-    <div class="col ticket-table-cell">
-      <p>Ticket Subject</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>Ticket Owner</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>Ticket Description</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>Priority</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>Assigned To</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>Date Created</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>Date Resolved</p>
-    </div>
-  </div>
-  <!-- Ticket table rows -->
-  <div class="row ticket-table" *ngFor="let ticket of tickets">
-    <div class="col ticket-table-cell">
-      <p>{{ ticket.subject }}</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>{{ fullName}}</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>{{ ticket.description }}</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>{{ ticket.priority }}</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>{{ ticket.AssignedTo }}</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>{{ ticket.DateCreated }}</p>
-    </div>
-    <div class="col ticket-table-cell">
-      <p>{{ ticket.DateResolved }}</p>
-    </div>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <!-- Ticket ID Column -->
+         <!-- Ticket Subject Column -->
+         <ng-container matColumnDef="ticketId">
+          <th mat-header-cell *matHeaderCellDef> Ticket ID </th>
+          <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.ticketID}} </td>
+        </ng-container>
+  
+      <!-- Ticket Subject Column -->
+      <ng-container matColumnDef="subject">
+        <th mat-header-cell *matHeaderCellDef> Ticket Subject </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.subject}} </td>
+      </ng-container>
+
+      <!-- Ticket Owner Column -->
+      <ng-container matColumnDef="owner">
+        <th mat-header-cell *matHeaderCellDef> Ticket Owner </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.owner}} </td>
+      </ng-container>
+
+      <!-- Ticket Description Column -->
+      <!-- <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Ticket Description </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.description}} </td>
+      </ng-container> -->
+
+      <!-- Priority Column -->
+      <ng-container matColumnDef="priority">
+        <th mat-header-cell *matHeaderCellDef> Priority </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.priority}} </td>
+      </ng-container>
+
+      <!-- Assigned To Column -->
+      <ng-container matColumnDef="assignedTo">
+        <th mat-header-cell *matHeaderCellDef> Assigned To </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.assignedTo}} </td>
+      </ng-container>
+
+      <!-- Date Created Column -->
+      <ng-container matColumnDef="dateCreated">
+        <th mat-header-cell *matHeaderCellDef> Date Created </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.dateCreated}} </td>
+      </ng-container>
+
+      <!-- Date Resolved Column -->
+      <ng-container matColumnDef="dateResolved">
+        <th mat-header-cell *matHeaderCellDef> Date Resolved </th>
+        <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.dateResolved}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" showFirstLastButtons></mat-paginator>
   </div>
 </div>
+
 
 
