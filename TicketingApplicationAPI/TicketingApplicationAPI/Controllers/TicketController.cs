@@ -134,37 +134,32 @@ namespace TicketingApplicationAPI.Controllers
 
 
         [HttpGet("sharedQueue")]
-        // use isuserauthorized method to check if user is authorized to access shared queue
         [Authorize]
-        public async Task<ActionResult<IEnumerable<Ticket>>> GetSharedQueueTickets()
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetSharedQueueTickets([FromQuery] int requiredRoleId)
         {
-            // Get the logged-in user's ID
             var loggedInUserId = GetLoggedInUserId();
 
             if (!loggedInUserId.HasValue)
             {
-                // User is not logged in
                 return Unauthorized(new { Message = "User not logged in" });
             }
 
-            // Check if the user is authorized to access the shared queue
-            if (!IsUserAuthorized(loggedInUserId.Value, 1))
+            if (!IsUserAuthorized(loggedInUserId.Value, requiredRoleId))
             {
-                // User is not authorized
                 return Unauthorized(new { Message = "User not authorized to access shared queue" });
             }
 
-            // Retrieve tickets from the shared queue where AssignedTo is null and AssignedRoleID is equal to the user's RoleID that is fetched from RoleID in the User table
             var tickets = await _authContext.Tickets
-                .Where(t => t.AssignedTo == 0 && t.AssignedRoleID == _authContext.Users.FirstOrDefault(u => u.Id == loggedInUserId.Value).RoleID)
+                .Where(t => t.AssignedTo == 0 && t.AssignedRoleID == requiredRoleId)
                 .ToListAsync();
+
             return Ok(tickets);
-
-
         }
 
-        // create api called takeover that will allow a user to take over a ticket from the shared queue and assign it to themselves we will pass the ticket id as a parameter and the user id will be taken from the logged in user when a user takes over a ticket the assigned to field should be updated with the user id
-        [HttpPost("takeover/{ticketId}")]
+    
+
+    // create api called takeover that will allow a user to take over a ticket from the shared queue and assign it to themselves we will pass the ticket id as a parameter and the user id will be taken from the logged in user when a user takes over a ticket the assigned to field should be updated with the user id
+    [HttpPost("takeover/{ticketId}")]
         [Authorize]
         public IActionResult TakeOver(int ticketId)
         {
