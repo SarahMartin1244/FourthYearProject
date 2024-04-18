@@ -33,6 +33,22 @@ namespace TicketingApplicationAPI.Controllers
             return null; // User is not logged in or user ID couldn't be parsed
         }
 
+        // method to compare the user's RoleID to the ticket's AssignedRoleID
+        private bool IsUserAuthorized(int userId, int roleId)
+        {
+            // Retrieve the user from the database based on the user ID
+            var user = _authContext.Users.FirstOrDefault(u => u.Id == userId);
+
+            if (user == null)
+            {
+                return false;
+            }
+
+            // Check if the user's RoleID matches the required RoleID
+            return user.RoleID == roleId;
+        }
+
+
         [HttpPost("createTicket")]
         public IActionResult CreateTicket([FromBody] Ticket ticketObj)
         {
@@ -81,8 +97,71 @@ namespace TicketingApplicationAPI.Controllers
         }
 
 
+        //[HttpGet("sharedQueue")]
+        //[Authorize] // Allow any authenticated user to access shared queue tickets
+        //public async Task<ActionResult<IEnumerable<Ticket>>> GetSharedQueueTickets()
+        //{
+        //    // Retrieve tickets from the shared queue (tickets not assigned to any user)
+        //    var tickets = await _authContext.Tickets
+        //        .Where(t => t.AssignedTo == null)
+        //        .ToListAsync();
+
+        //    return Ok(tickets);
+        //}
 
 
+        // Method to get all tickets assigned to the logged-in user
+        [HttpGet("myTickets")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetMyTickets()
+        {
+            // Get the logged-in user's ID
+            var loggedInUserId = GetLoggedInUserId();
+
+            if (!loggedInUserId.HasValue)
+            {
+                // User is not logged in
+                return Unauthorized(new { Message = "User not logged in" });
+            }
+
+            // Retrieve tickets assigned to the logged-in user
+            var tickets = await _authContext.Tickets
+                .Where(t => t.AssignedTo == loggedInUserId.Value.ToString())
+                .ToListAsync();
+
+            return Ok(tickets);
+        }
+
+
+
+        [HttpGet("sharedQueue")]
+        // use isuserauthorized method to check if user is authorized to access shared queue
+        [Authorize]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetSharedQueueTickets()
+        {
+            // Get the logged-in user's ID
+            var loggedInUserId = GetLoggedInUserId();
+
+            if (!loggedInUserId.HasValue)
+            {
+                // User is not logged in
+                return Unauthorized(new { Message = "User not logged in" });
+            }
+
+            // Check if the user is authorized to access the shared queue
+            if (!IsUserAuthorized(loggedInUserId.Value, 1))
+            {
+                // User is not authorized
+                return Unauthorized(new { Message = "User not authorized to access shared queue" });
+            }
+
+            // Retrieve tickets from the shared queue where AssignedTo is null and AssignedRoleID is equal to the user's RoleID that is fetched from RoleID in the User table
+            var tickets = await _authContext.Tickets
+                .Where(t => t.AssignedTo == null && t.AssignedRoleID == _authContext.Users.FirstOrDefault(u => u.Id == loggedInUserId.Value).RoleID)
+                .ToListAsync();
+            return Ok(tickets);
+
+
+        }
 
 
 

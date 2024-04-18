@@ -22,6 +22,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
+import { UserTicketsComponent } from './components/user-tickets/user-tickets.component';
+import { SharedQueueTicketsComponent } from './components/shared-queue-tickets/shared-queue-tickets.component';
+
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     DashboardComponent,
     TicketComponent,
-    ViewTicketsComponent
+    ViewTicketsComponent,
+    UserTicketsComponent,
+    SharedQueueTicketsComponent
+ 
   ],
   imports: [
     BsDropdownModule.forRoot(),

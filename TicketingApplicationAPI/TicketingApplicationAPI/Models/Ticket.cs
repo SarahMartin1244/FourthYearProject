@@ -15,6 +15,7 @@ namespace TicketingApplicationAPI.Models
         [ForeignKey("UserID")]
         public virtual User User { get; set; }
 
+        public int? AssignedRoleID { get; set; }
         public string Subject { get; set; }
         public string Priority { get; set; }
         public string Description { get; set; }
@@ -31,5 +32,9 @@ namespace TicketingApplicationAPI.Models
 
         [NotMapped] // Not mapped to the database
         public string UserLastName => User?.LastName;
+
+        // Get formatted date string
+        [NotMapped] // Not mapped to the database
+        public string FormattedDateCreated => DateCreated?.ToString("yyyy-MM-dd HH:mm:ss");
     }
 }

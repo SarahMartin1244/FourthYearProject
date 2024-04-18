@@ -62,6 +62,11 @@ export class AuthService {
     return this.http.get<any[]>(`${this.baseUrl}GetUsers`);
   }
 
+  
+  // Shared queue tickets service method
+  getSharedQueueTickets(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.ticketUrl}sharedQueue`);
+  }
 decodedToken(){
  const jwtHelper = new JwtHelperService();
 const token = this.getToken()!;

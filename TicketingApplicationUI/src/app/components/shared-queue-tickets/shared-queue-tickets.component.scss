@@ -1,0 +1,69 @@
+/* Container for buttons */
+
+.createTicket {
+    margin-top: 60px; /* Adjust the margin */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px; /* Adjusts the margin */
+  }
+  
+  
+  
+  #navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  
+  
+  
+  
+  .nav-link:hover {
+    background-color: #f8f9fa; /* Hover effect */
+  }
+  
+  /* Active link styling */
+  .nav-link.active {
+    font-weight: bold;
+  }
+  ::ng-deep .mat-paginator {
+    .mat-select-value {
+      width: auto; /* Allow the width to adjust based on content */
+    }
+  
+    .mat-select-panel {
+      min-width: unset; /* Remove any minimum width constraint */
+      max-width: unset; /* Remove any maximum width constraint */
+      width: auto; /* Allow the width to adjust based on content */
+      margin-top: 0; /* Adjust top margin as needed */
+      margin-left: 0; /* Adjust left margin as needed */
+    }
+  
+    .small-font {
+      font-size: 1px; /* Adjust the font size as needed */
+    }
+  
+  
+    
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 50px auto 0; /* Change the margin-top to 50px */
+    border: 1px solid #ccc; /* Add a 1px solid border with color #ccc */
+    padding: 20px; /* Optional: Add padding inside the border */
+  }
+  
+  
+  
+  
+  

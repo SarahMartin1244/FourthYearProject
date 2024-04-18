@@ -24,4 +24,12 @@ export class ApiService {
     // Include the userId in the URL
     return this.http.get<any>(`${this.ticketUrl}GetTicketsForUser/${userId}`);
   }
+
+  getSharedQueueTickets() {
+    const url = `${this.ticketUrl}sharedQueue`;
+    console.log('Requesting URL:', url); // Add debugging statement to log the constructed URL
+    return this.http.get<any>(url);
+  }
+  
+  
 }
