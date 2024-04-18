@@ -125,7 +125,7 @@ namespace TicketingApplicationAPI.Controllers
 
             // Retrieve tickets assigned to the logged-in user
             var tickets = await _authContext.Tickets
-                .Where(t => t.AssignedTo == loggedInUserId.Value.ToString())
+                .Where(t => t.AssignedTo == loggedInUserId.Value)
                 .ToListAsync();
 
             return Ok(tickets);
@@ -156,7 +156,7 @@ namespace TicketingApplicationAPI.Controllers
 
             // Retrieve tickets from the shared queue where AssignedTo is null and AssignedRoleID is equal to the user's RoleID that is fetched from RoleID in the User table
             var tickets = await _authContext.Tickets
-                .Where(t => t.AssignedTo == null && t.AssignedRoleID == _authContext.Users.FirstOrDefault(u => u.Id == loggedInUserId.Value).RoleID)
+                .Where(t => t.AssignedTo == 0 && t.AssignedRoleID == _authContext.Users.FirstOrDefault(u => u.Id == loggedInUserId.Value).RoleID)
                 .ToListAsync();
             return Ok(tickets);
 

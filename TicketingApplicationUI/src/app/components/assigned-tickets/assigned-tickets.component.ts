@@ -6,17 +6,16 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
-  selector: 'app-user-tickets',
-  templateUrl: './user-tickets.component.html',
-  styleUrls: ['./user-tickets.component.scss'] // Correct property name: styleUrls
+  selector: 'app-assigned-tickets',
+  templateUrl: './assigned-tickets.component.html',
+  styleUrls: ['./assigned-tickets.component.scss'] // Change styleUrl to styleUrls
 })
 
-export class UserTicketsComponent  implements OnInit{
-
+export class AssignedTicketsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
 
   isDropdownOpen = false;
-public users: any = [];
+  public users: any = [];
   public tickets: any = [];
   public dataSource = new MatTableDataSource<any>(); // Create a new MatTableDataSource
 
@@ -93,5 +92,3 @@ public users: any = [];
 
   displayedColumns: string[] = ['ticketId',  'owner', 'description', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status'];
 }
-
-

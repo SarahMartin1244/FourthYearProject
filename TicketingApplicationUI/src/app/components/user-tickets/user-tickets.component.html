@@ -36,7 +36,10 @@
 
 
 
-
+<ng-container matColumnDef="description">
+  <th mat-header-cell *matHeaderCellDef> Ticket Description </th>
+  <td mat-cell *matCellDef="let ticket" class="small-font">  {{ ticket.description }} </td>
+</ng-container>
   
 
 

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +31,12 @@ export class ApiService {
     console.log('Requesting URL:', url); // Add debugging statement to log the constructed URL
     return this.http.get<any>(url);
   }
-  
+  takeOverTicket(ticketId: number | null) {
+    if (ticketId !== null) {
+      return this.http.post(`${this.ticketUrl}takeoverTicket/${ticketId}`, {});
+    } else {
+      return throwError('Invalid ticket ID');
+    }
+  }
   
 }

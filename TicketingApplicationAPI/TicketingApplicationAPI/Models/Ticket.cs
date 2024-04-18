@@ -19,7 +19,7 @@ namespace TicketingApplicationAPI.Models
         public string Subject { get; set; }
         public string Priority { get; set; }
         public string Description { get; set; }
-        public string AssignedTo { get; set; } // will be foreign key 
+        public int AssignedTo { get; set; } // will be foreign key 
 
         // Use DateTime for dateCreated
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -64,5 +64,13 @@
 }
 
 
+.tab-container {
+  margin-top: 90px; /* Adjust the top margin as needed */
+}
 
+.tab-container mat-tab-group .mat-tab-label {
+  /* Target specific properties like padding or font-size */
+  padding: 4px 12px !important; /* Reduce padding as an example */
+  font-size: 14px !important; /* Reduce font size as an example */
+}
 

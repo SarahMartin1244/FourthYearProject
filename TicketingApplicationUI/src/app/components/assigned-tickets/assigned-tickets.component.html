@@ -1,0 +1,86 @@
+
+
+
+
+
+<div class="container">
+
+
+    <form class="form-inline my-2 my-lg-0 mx-auto" (ngSubmit)="applyFilter()">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search (Or ticket ID)" aria-label="Search" [(ngModel)]="searchTerm">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  
+    <div style="margin-top: 25px;">
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+  
+          <!-- Ticket ID Column -->
+          <ng-container matColumnDef="ticketId">
+            <th mat-header-cell *matHeaderCellDef> Ticket ID </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.ticketID}} </td>
+          </ng-container>
+  
+          <!-- Ticket Subject Column -->
+          <ng-container matColumnDef="subject">
+            <th mat-header-cell *matHeaderCellDef> Ticket Subject </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.subject}} </td>
+          </ng-container>
+  
+  
+  <!-- First Name Column -->
+  <ng-container matColumnDef="owner">
+    <th mat-header-cell *matHeaderCellDef> Ticket Owner </th>
+    <td mat-cell *matCellDef="let ticket" class="small-font">  {{ fullName }} </td>
+  </ng-container>
+
+    
+  <!-- First Name Column -->
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Ticket Description </th>
+    <td mat-cell *matCellDef="let ticket" class="small-font">  {{ ticket.description}} </td>
+  </ng-container>
+  
+  
+  
+  
+  
+  
+  
+          <!-- Priority Column -->
+          <ng-container matColumnDef="priority">
+            <th mat-header-cell *matHeaderCellDef> Priority </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.priority}} </td>
+          </ng-container>
+  
+          <!-- Assigned To Column -->
+          <ng-container matColumnDef="assignedTo">
+            <th mat-header-cell *matHeaderCellDef> Assigned To </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.assignedUserName}} </td>
+          </ng-container>
+  
+          <!-- Date Created Column -->
+          <ng-container matColumnDef="dateCreated">
+            <th mat-header-cell *matHeaderCellDef> Date Created </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.dateCreated}} </td>
+          </ng-container>
+  
+          <!-- Date Resolved Column -->
+          <ng-container matColumnDef="dateResolved">
+            <th mat-header-cell *matHeaderCellDef> Date Resolved </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.dateResolved}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.dateResolved}} </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" showFirstLastButtons></mat-paginator>
+      </div>
+    </div>
+  </div>
+  

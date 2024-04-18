@@ -3,6 +3,7 @@ import { ApiService } from '../../services/api.service';
 import { AuthService } from '../../services/auth.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-shared-queue-tickets',
@@ -21,7 +22,8 @@ export class SharedQueueTicketsComponent implements OnInit {
 
   constructor(
     private api: ApiService,
-    private auth: AuthService
+    private auth: AuthService,
+    private snackBar: MatSnackBar
   ) { }
 
   ngOnInit() {
@@ -78,5 +80,41 @@ export class SharedQueueTicketsComponent implements OnInit {
     }
   }
 
-  displayedColumns: string[] = ['ticketId', 'subject', 'owner', 'description', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status'];
+  takeOverTicket(ticket: any) {
+    // Check if ticketId is a valid number
+    if (typeof ticket.ticketID !== 'number') {
+      console.error('Invalid ticketId:', ticket.ticketID);
+      return;
+    }
+  
+    // Call API endpoint to take over the ticket
+    this.api.takeOverTicket(ticket.ticketID).subscribe(
+      res => {
+        console.log('Ticket taken over successfully:', res);
+        // Remove the ticket from the shared queue
+        this.tickets = this.tickets.filter(t => t.ticketID !== ticket.ticketID);
+        this.dataSource.data = this.tickets;
+        // Show a snackbar notification
+        this.snackBar.open('Ticket taken over successfully!', 'Close', {
+          duration: 3000,
+          horizontalPosition: 'center',
+          verticalPosition: 'bottom'
+        });
+      },
+      error => {
+        console.error('Error taking over ticket:', error);
+        // Show an error snackbar notification
+        this.snackBar.open('Failed to take over ticket. Please try again later.', 'Close', {
+          duration: 3000,
+          horizontalPosition: 'center',
+          verticalPosition: 'bottom'
+        });
+      }
+    );
+  }
+  
+  
+
+  
+  displayedColumns: string[] = ['ticketId', 'subject', 'owner', 'description', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status', 'takeOver'];
 }
