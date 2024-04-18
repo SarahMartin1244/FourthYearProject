@@ -111,25 +111,25 @@ namespace TicketingApplicationAPI.Controllers
 
 
         // Method to get all tickets assigned to the logged-in user
-        [HttpGet("myTickets")]
-        public async Task<ActionResult<IEnumerable<Ticket>>> GetMyTickets()
-        {
-            // Get the logged-in user's ID
-            var loggedInUserId = GetLoggedInUserId();
+        //[HttpGet("myTickets")]
+        //public async Task<ActionResult<IEnumerable<Ticket>>> GetMyTickets()
+        //{
+        //    // Get the logged-in user's ID
+        //    var loggedInUserId = GetLoggedInUserId();
 
-            if (!loggedInUserId.HasValue)
-            {
-                // User is not logged in
-                return Unauthorized(new { Message = "User not logged in" });
-            }
+        //    if (!loggedInUserId.HasValue)
+        //    {
+        //        // User is not logged in
+        //        return Unauthorized(new { Message = "User not logged in" });
+        //    }
 
-            // Retrieve tickets assigned to the logged-in user
-            var tickets = await _authContext.Tickets
-                .Where(t => t.AssignedTo == loggedInUserId.Value)
-                .ToListAsync();
+        //    // Retrieve tickets assigned to the logged-in user
+        //    var tickets = await _authContext.Tickets
+        //        .Where(t => t.AssignedTo == loggedInUserId.Value)
+        //        .ToListAsync();
 
-            return Ok(tickets);
-        }
+        //    return Ok(tickets);
+        //}
 
 
 
@@ -161,6 +161,69 @@ namespace TicketingApplicationAPI.Controllers
             return Ok(tickets);
 
 
+        }
+
+        // create api called takeover that will allow a user to take over a ticket from the shared queue and assign it to themselves we will pass the ticket id as a parameter and the user id will be taken from the logged in user when a user takes over a ticket the assigned to field should be updated with the user id
+        [HttpPost("takeover/{ticketId}")]
+        [Authorize]
+        public IActionResult TakeOver(int ticketId)
+        {
+            // Get the logged-in user's ID
+            var loggedInUserId = GetLoggedInUserId();
+
+            if (!loggedInUserId.HasValue)
+            {
+                // User is not logged in
+                return Unauthorized(new { Message = "User not logged in" });
+            }
+
+            // Check if the user is authorized to access the shared queue
+            if (!IsUserAuthorized(loggedInUserId.Value, 1))
+            {
+                // User is not authorized
+                return Unauthorized(new { Message = "User not authorized to access shared queue" });
+            }
+
+            // Retrieve the ticket from the database
+            var ticket = _authContext.Tickets.FirstOrDefault(t => t.TicketID == ticketId);
+
+            if (ticket == null)
+            {
+                // Ticket not found
+                return NotFound(new { Message = "Ticket not found" });
+            }
+
+            // Assign the ticket to the logged-in user
+            ticket.AssignedTo = loggedInUserId.Value;
+
+            // Update the ticket in the database
+            _authContext.Tickets.Update(ticket);
+            _authContext.SaveChanges();
+
+            return Ok(new { Message = "Ticket assigned to user" });
+        }
+
+        // create api called updateassignqueue that now displays all tickets assigned to the logged in user
+        // create api called updateassignqueue that now displays all tickets assigned to the logged in user
+        [HttpGet("updateassignqueue")]
+        [Authorize]
+        public async Task<ActionResult<IEnumerable<Ticket>>> UpdateAssignQueue()
+        {
+            // Get the logged-in user's ID
+            var loggedInUserId = GetLoggedInUserId();
+
+            if (!loggedInUserId.HasValue)
+            {
+                // User is not logged in
+                return Unauthorized(new { Message = "User not logged in" });
+            }
+
+            // Retrieve tickets assigned to the logged-in user
+            var tickets = await _authContext.Tickets
+                .Where(t => t.AssignedTo == loggedInUserId.Value)
+                .ToListAsync();
+
+            return Ok(tickets);
         }
 
 

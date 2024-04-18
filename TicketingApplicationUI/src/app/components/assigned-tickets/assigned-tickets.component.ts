@@ -8,19 +8,15 @@ import { MatPaginator } from '@angular/material/paginator';
 @Component({
   selector: 'app-assigned-tickets',
   templateUrl: './assigned-tickets.component.html',
-  styleUrls: ['./assigned-tickets.component.scss'] // Change styleUrl to styleUrls
+  styleUrls: ['./assigned-tickets.component.scss']
 })
-
 export class AssignedTicketsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
 
   isDropdownOpen = false;
-  public users: any = [];
-  public tickets: any = [];
-  public dataSource = new MatTableDataSource<any>(); // Create a new MatTableDataSource
-
   public fullName: string = "";
-  public searchTerm: string = ''; // Search term input by the user
+  public searchTerm: string = '';
+  public dataSource = new MatTableDataSource<any>();
 
   constructor(
     private api: ApiService,
@@ -36,29 +32,13 @@ export class AssignedTicketsComponent implements OnInit {
     });
 
     // Fetch tickets for the logged-in user
-    this.GetTicketsForUser();
+    this.fetchAssignedTickets();
   }
-
-  GetTicketsForUser() {
-    // Get the user ID of the logged-in user
-    const userId = this.auth.getLoggedInUserId();
-    console.log('userId:', userId); // Log the userId before making the API call
-    if (userId) {
-      // Fetch tickets for the user
-      this.api.GetTicketsForUser(userId).subscribe(
-        res => {
-          console.log('res:', res); // Log the response from the API
-          this.tickets = res;
-          this.dataSource.data = this.tickets; // Update dataSource with fetched tickets
-          if (this.paginator) {
-            this.dataSource.paginator = this.paginator; // Set paginator after receiving tickets data
-          }
-        },
-        error => {
-          console.error('Error fetching tickets:', error); // Log any errors that occur during the subscription
-        }
-      );
-    }
+// get the assigned tickets from the api called updateassignqueue and display them in the table 
+  fetchAssignedTickets() {
+    this.api.updateassignqueue().subscribe((data: any) => {
+      this.dataSource.data = data;
+    });
   }
 
   toggleDropdown(event: MouseEvent) {
@@ -90,5 +70,5 @@ export class AssignedTicketsComponent implements OnInit {
     }
   }
 
-  displayedColumns: string[] = ['ticketId',  'owner', 'description', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status'];
+  displayedColumns: string[] = ['ticketId', 'owner', 'description', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status'];
 }

@@ -59,7 +59,7 @@
         <!-- Date Created Column -->
         <ng-container matColumnDef="dateCreated">
           <th mat-header-cell *matHeaderCellDef> Date Created </th>
-          <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.dateCreated}} </td>
+          <td mat-cell *matCellDef="let ticket" class="small-font"> {{ticket.formattedDateCreated }} </td>
         </ng-container>
 
         <!-- Date Resolved Column -->

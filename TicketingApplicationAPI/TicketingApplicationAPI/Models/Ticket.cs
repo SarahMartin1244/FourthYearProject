@@ -35,6 +35,8 @@ namespace TicketingApplicationAPI.Models
 
         // Get formatted date string
         [NotMapped] // Not mapped to the database
-        public string FormattedDateCreated => DateCreated?.ToString("yyyy-MM-dd HH:mm:ss");
+        public string FormattedDateCreated => DateCreated?.ToString("dddd, dd MMMM yyyy h:mm tt");
+
+
     }
 }

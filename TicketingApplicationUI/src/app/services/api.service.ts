@@ -33,10 +33,14 @@ export class ApiService {
   }
   takeOverTicket(ticketId: number | null) {
     if (ticketId !== null) {
-      return this.http.post(`${this.ticketUrl}takeoverTicket/${ticketId}`, {});
+      return this.http.post(`${this.ticketUrl}takeover/${ticketId}`, {});
     } else {
       return throwError('Invalid ticket ID');
     }
+  }
+
+  updateassignqueue() {
+    return this.http.get(`${this.ticketUrl}updateassignqueue`);
   }
   
 }
