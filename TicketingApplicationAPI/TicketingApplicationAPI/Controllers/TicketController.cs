@@ -288,13 +288,19 @@ namespace TicketingApplicationAPI.Controllers
             // Update the date resolved to the current date and time
             ticket.DateResolved = DateTime.UtcNow.ToString("dddd, dd MMMM yyyy h:mm tt");
 
+            // Remove the resolved ticket from the shared queue
+            ticket.AssignedTo = 0;
+
             // Update the ticket in the database
             _authContext.Tickets.Update(ticket);
             _authContext.SaveChanges();
 
+          
+
+
+           
+
             return Ok(new { Message = "Ticket resolved" });
         }
-
-
     }
 }

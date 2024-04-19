@@ -18,6 +18,7 @@ export class AssignedTicketsComponent implements OnInit {
   public fullName: string = "";
   public searchTerm: string = '';
   public dataSource = new MatTableDataSource<any>();
+  router: any;
 
   constructor(
     private api: ApiService,
@@ -87,6 +88,10 @@ export class AssignedTicketsComponent implements OnInit {
               horizontalPosition: 'center',
               verticalPosition: 'bottom'
             });
+            // Navigate back to the same route to refresh the page
+            this.router.navigateByUrl('/assigned-tickets', { skipLocationChange: true }).then(() => {
+              this.router.navigate(['/assigned-tickets']);
+            });
           }
         },
         error => {
@@ -103,6 +108,7 @@ export class AssignedTicketsComponent implements OnInit {
       console.error('Invalid ticket ID');
     }
   }
+  
 
   displayedColumns: string[] = ['ticketId', 'owner', 'description', 'priority', 'assignedTo', 'dateCreated', 'dateResolved', 'status', 'resolve'];
 }
