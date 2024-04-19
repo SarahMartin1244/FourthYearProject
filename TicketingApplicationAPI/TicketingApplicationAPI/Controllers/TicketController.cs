@@ -165,6 +165,15 @@ namespace TicketingApplicationAPI.Controllers
                 .Where(t => t.AssignedTo == 0 && t.AssignedRoleID == requiredRoleId)
                 .ToListAsync();
 
+            // Set the status of each ticket to "In Queue"
+            foreach (var ticket in tickets)
+            {
+                ticket.Status = "In Queue";
+            }
+
+            // Save changes to the database (optional, if needed)
+            await _authContext.SaveChangesAsync();
+
             return Ok(tickets);
         }
 
@@ -230,6 +239,15 @@ namespace TicketingApplicationAPI.Controllers
                 .Where(t => t.AssignedTo == loggedInUserId.Value)
                 .ToListAsync();
 
+
+            // Set the status of each ticket to "In Queue"
+            foreach (var ticket in tickets)
+            {
+                ticket.Status = "In Progress";
+            }
+
+            // Save changes to the database (optional, if needed)
+            await _authContext.SaveChangesAsync();
             return Ok(tickets);
         }
 

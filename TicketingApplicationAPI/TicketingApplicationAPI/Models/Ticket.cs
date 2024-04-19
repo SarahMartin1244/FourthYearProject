@@ -16,6 +16,9 @@ namespace TicketingApplicationAPI.Models
         public virtual User User { get; set; }
 
         public int? AssignedRoleID { get; set; }
+
+
+        public string? Status { get; set; }
         public string Subject { get; set; }
         public string Priority { get; set; }
         public string Description { get; set; }

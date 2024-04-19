@@ -20,15 +20,21 @@
               <!-- Error message for Subject -->
               <small *ngIf="ticketForm.controls['subject'].dirty && ticketForm.hasError('required', 'subject')" class="text-danger">*Subject is required</small>
 
-              <!-- Priority input -->
-              <div class="form-group pt-3">
-                <div class="input-field" [class.error]="ticketForm.controls['priority'].dirty && ticketForm.hasError('required', 'priority')">
-                  <span class="fa fa-exclamation-triangle p-2"></span>
-                  <input formControlName="priority" type="text" placeholder="Priority">
-                </div>
-              </div>
-              <!-- Error message for Priority -->
-              <small *ngIf="ticketForm.controls['priority'].dirty && ticketForm.hasError('required', 'priority')" class="text-danger">*Priority is required</small>
+             <!-- Priority input -->
+<div class="form-group pt-3">
+  <div class="input-field" [class.error]="ticketForm.controls['priority'].dirty && ticketForm.hasError('required', 'priority')">
+    <span class="fa fa-exclamation-triangle p-2"></span>
+    <select formControlName="priority">
+      <option value="" disabled selected>Priority</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+  </div>
+</div>
+<!-- Error message for Priority -->
+<small *ngIf="ticketForm.controls['priority'].dirty && ticketForm.hasError('required', 'priority')" class="text-danger">*Priority is required</small>
+
 
               <!-- Description input -->
               <div class="form-group pt-3">

@@ -26,6 +26,8 @@ import { SharedQueueTicketsComponent } from './components/shared-queue-tickets/s
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AssignedTicketsComponent } from './components/assigned-tickets/assigned-tickets.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { AssignedTicketsComponent } from './components/assigned-tickets/assigned
     MatTabsModule,
     MatSnackBarModule,
     BsDropdownModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    MatDialogModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
