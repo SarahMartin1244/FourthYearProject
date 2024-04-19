@@ -1,0 +1,40 @@
+\doxysection{App\+Db\+Context.\+cs}
+\hypertarget{_app_db_context_8cs_source}{}\label{_app_db_context_8cs_source}\index{Context/AppDbContext.cs@{Context/AppDbContext.cs}}
+\mbox{\hyperlink{_app_db_context_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore;}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_ticketing_application_a_p_i_1_1_models}{TicketingApplicationAPI.Models}};}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00004}\mbox{\hyperlink{namespace_ticketing_application_a_p_i}{00004}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ticketing_application_a_p_i_1_1_context}{TicketingApplicationAPI.Context}}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00006}00006\ \ \ \ \ \textcolor{comment}{//\ Represents\ the\ database\ context\ for\ the\ application\ derived\ from\ DbContext.}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00007}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context}{00007}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context}{AppDbContext}}\ :\ DbContext}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00008}00008\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00009}00009\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Constructor\ to\ initialize\ the\ AppDbContext\ with\ DbContextOptions.}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00010}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_afc04db806b70de8729bdbc82222f939c}{00010}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_afc04db806b70de8729bdbc82222f939c}{AppDbContext}}(DbContextOptions<AppDbContext>\ options)\ :\ base(options)}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Represents\ the\ DbSet\ for\ the\ user\ entity\ in\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00015}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_aa1806ddb1c4f0f76c4e704851a332d38}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DbSet<User>\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_aa1806ddb1c4f0f76c4e704851a332d38}{Users}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00016}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_a9e23dc0904dda8d49da7f57d0d0ab681}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DbSet<Ticket>\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_a9e23dc0904dda8d49da7f57d0d0ab681}{Tickets}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Overrides\ the\ OnModelCreating\ method\ to\ configure\ the\ model\ being\ generated\ for\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00019}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_ac16650b01366ffe72d4f661807604fc3}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context_ac16650b01366ffe72d4f661807604fc3}{OnModelCreating}}(ModelBuilder\ modelBuilder)}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Configures\ the\ User\ entity\ to\ be\ mapped\ to\ the\ "{}users"{}\ table\ in\ the\ database.}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_user}{User}}>().ToTable(\textcolor{stringliteral}{"{}users"{}});}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}}>().ToTable(\textcolor{stringliteral}{"{}tickets"{}});}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00030}00030\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_app_db_context_8cs_source_l00034}00034\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,75 @@
+\doxysection{20240114211831\+\_\+v1.\+Designer.\+cs}
+\hypertarget{20240114211831__v1_8_designer_8cs_source}{}\label{20240114211831__v1_8_designer_8cs_source}\index{Migrations/20240114211831\_v1.Designer.cs@{Migrations/20240114211831\_v1.Designer.cs}}
+\mbox{\hyperlink{20240114211831__v1_8_designer_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00001}00001\ \textcolor{comment}{//\ <auto-\/generated\ />}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore;}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Infrastructure;}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Metadata;}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Migrations;}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Storage.ValueConversion;}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_ticketing_application_a_p_i_1_1_context}{TicketingApplicationAPI.Context}};}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00009}00009\ \textcolor{preprocessor}{\#nullable\ disable}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00011}00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ticketing_application_a_p_i_1_1_migrations}{TicketingApplicationAPI.Migrations}}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00013}00013\ \ \ \ \ [DbContext(typeof(\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context}{AppDbContext}}))]}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00014}00014\ \ \ \ \ [Migration(\textcolor{stringliteral}{"{}20240114211831\_v1"{}})]}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00015}00015\ \ \ \ \ \textcolor{keyword}{partial\ class\ }v1}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00016}00016\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00017}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v1_ac9b6c05754ea1b2507e6d874ceb6afd7}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v1_ac9b6c05754ea1b2507e6d874ceb6afd7}{BuildTargetModel}}(ModelBuilder\ modelBuilder)}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00019}00019\ \textcolor{preprocessor}{\#pragma\ warning\ disable\ 612,\ 618}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasAnnotation(\textcolor{stringliteral}{"{}ProductVersion"{}},\ \textcolor{stringliteral}{"{}6.0.9"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasAnnotation(\textcolor{stringliteral}{"{}Relational:MaxIdentifierLength"{}},\ 128);}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder,\ 1L,\ 1);}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}TicketingApplicationAPI.Models.User"{}},\ b\ =>}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}),\ 1L,\ 1);}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Email"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}FirstName"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}LastName"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Password"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Role"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Token"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Username"{}})}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired()}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}users"{}},\ (\textcolor{keywordtype}{string})\textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00066}00066\ \textcolor{preprocessor}{\#pragma\ warning\ restore\ 612,\ 618}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20240114211831__v1_8_designer_8cs_source_l00069}00069\ \}}
+
+\end{DoxyCode}

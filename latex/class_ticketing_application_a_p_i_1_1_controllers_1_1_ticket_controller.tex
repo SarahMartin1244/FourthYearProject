@@ -1,0 +1,113 @@
+\doxysection{Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller Class Reference}
+\hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller}{}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller}\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+Inheritance diagram for Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a7a0fff0e2f209caa24fe41261f52fc5e}{Ticket\+Controller}} (\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context}{App\+Db\+Context}} app\+Db\+Context)
+\item 
+IAction\+Result \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a7ad4f1a7c66de2eead8cd7ba53ab5de8}{Create\+Ticket}} (\mbox{[}From\+Body\mbox{]} \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} ticket\+Obj)
+\item 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} $>$ $>$ $>$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_af9a11b02a236f1169d6c65efcf5e2efc}{Get\+Tickets\+For\+User}} (int user\+Id)
+\item 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} $>$ $>$ $>$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a42b5462964be5df657edd9b909217be9}{Get\+Shared\+Queue\+Tickets}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a32e90409b8d474e1d70fdd500da54815}{Take\+Over}} (int ticket\+Id)
+\item 
+async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} $>$ $>$ $>$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a6cada9f5fcafd5dcfc4b944054d8c2db}{Update\+Assign\+Queue}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_afc96614849eb06660b5ce6e692c9b227}{Resolve\+Ticket}} (int ticket\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a7a0fff0e2f209caa24fe41261f52fc5e}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a7a0fff0e2f209caa24fe41261f52fc5e} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!TicketController@{TicketController}}
+\index{TicketController@{TicketController}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{TicketController()}{TicketController()}}
+{\footnotesize\ttfamily Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Ticket\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context}{App\+Db\+Context}}}]{app\+Db\+Context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a7ad4f1a7c66de2eead8cd7ba53ab5de8}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a7ad4f1a7c66de2eead8cd7ba53ab5de8} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!CreateTicket@{CreateTicket}}
+\index{CreateTicket@{CreateTicket}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{CreateTicket()}{CreateTicket()}}
+{\footnotesize\ttfamily IAction\+Result Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Create\+Ticket (\begin{DoxyParamCaption}\item[{\mbox{[}\+From\+Body\mbox{]} \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}}}]{ticket\+Obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00053}{53}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a42b5462964be5df657edd9b909217be9}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a42b5462964be5df657edd9b909217be9} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!GetSharedQueueTickets@{GetSharedQueueTickets}}
+\index{GetSharedQueueTickets@{GetSharedQueueTickets}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{GetSharedQueueTickets()}{GetSharedQueueTickets()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} $>$ $>$ $>$ Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Get\+Shared\+Queue\+Tickets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00138}{138}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_af9a11b02a236f1169d6c65efcf5e2efc}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_af9a11b02a236f1169d6c65efcf5e2efc} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!GetTicketsForUser@{GetTicketsForUser}}
+\index{GetTicketsForUser@{GetTicketsForUser}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{GetTicketsForUser()}{GetTicketsForUser()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} $>$ $>$ $>$ Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Get\+Tickets\+For\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00089}{89}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_afc96614849eb06660b5ce6e692c9b227}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_afc96614849eb06660b5ce6e692c9b227} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!ResolveTicket@{ResolveTicket}}
+\index{ResolveTicket@{ResolveTicket}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{ResolveTicket()}{ResolveTicket()}}
+{\footnotesize\ttfamily IAction\+Result Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Resolve\+Ticket (\begin{DoxyParamCaption}\item[{int}]{ticket\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00258}{258}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a32e90409b8d474e1d70fdd500da54815}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a32e90409b8d474e1d70fdd500da54815} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!TakeOver@{TakeOver}}
+\index{TakeOver@{TakeOver}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{TakeOver()}{TakeOver()}}
+{\footnotesize\ttfamily IAction\+Result Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Take\+Over (\begin{DoxyParamCaption}\item[{int}]{ticket\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00185}{185}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+\Hypertarget{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a6cada9f5fcafd5dcfc4b944054d8c2db}\label{class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller_a6cada9f5fcafd5dcfc4b944054d8c2db} 
+\index{TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}!UpdateAssignQueue@{UpdateAssignQueue}}
+\index{UpdateAssignQueue@{UpdateAssignQueue}!TicketingApplicationAPI.Controllers.TicketController@{TicketingApplicationAPI.Controllers.TicketController}}
+\doxysubsubsection{\texorpdfstring{UpdateAssignQueue()}{UpdateAssignQueue()}}
+{\footnotesize\ttfamily async Task$<$ Action\+Result$<$ IEnumerable$<$ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_models_1_1_ticket}{Ticket}} $>$ $>$ $>$ Ticketing\+Application\+API.\+Controllers.\+Ticket\+Controller.\+Update\+Assign\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ticket_controller_8cs_source_l00226}{226}} of file \mbox{\hyperlink{_ticket_controller_8cs_source}{Ticket\+Controller.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\mbox{\hyperlink{_ticket_controller_8cs}{Ticket\+Controller.\+cs}}\end{DoxyCompactItemize}

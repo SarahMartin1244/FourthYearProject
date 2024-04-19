@@ -1,0 +1,181 @@
+\doxysection{20240128170451\+\_\+v2.\+cs}
+\hypertarget{20240128170451__v2_8cs_source}{}\label{20240128170451__v2_8cs_source}\index{Migrations/20240128170451\_v2.cs@{Migrations/20240128170451\_v2.cs}}
+\mbox{\hyperlink{20240128170451__v2_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Migrations;}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00004}00004\ \textcolor{preprocessor}{\#nullable\ disable}}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ticketing_application_a_p_i_1_1_migrations}{TicketingApplicationAPI.Migrations}}}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00008}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v2}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v2}{v2}}\ :\ Migration}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00010}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v2_a8f2bb5f62f13ffb8fdc695d85b13ca3a}{00010}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v2_a8f2bb5f62f13ffb8fdc695d85b13ca3a}{Up}}(MigrationBuilder\ migrationBuilder)}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Username"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Token"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Role"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Password"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}LastName"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FirstName"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Email"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}tickets"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TicketID\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserID\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Subject\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Priority\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ AssignedTo\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DateCreated\ =\ table.Column<DateTime>(type:\ \textcolor{stringliteral}{"{}datetime2"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DateResolved\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_tickets"{}},\ x\ =>\ x.TicketID);}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_tickets\_users\_UserID"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.UserID,}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_tickets\_UserID"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}tickets"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}UserID"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00099}\mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v2_a403b3892b45234fab7377513f912dab3}{00099}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ticketing_application_a_p_i_1_1_migrations_1_1v2_a403b3892b45234fab7377513f912dab3}{Down}}(MigrationBuilder\ migrationBuilder)}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}tickets"{}});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Username"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Token"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Role"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Password"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}LastName"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FirstName"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.AlterColumn<\textcolor{keywordtype}{string}>(}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Email"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}users"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00168}00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nullable:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ defaultValue:\ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00170}00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldClrType:\ typeof(\textcolor{keywordtype}{string}),}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00171}00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldType:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00172}00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ oldNullable:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00173}00173\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00174}00174\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20240128170451__v2_8cs_source_l00175}00175\ \}}
+
+\end{DoxyCode}

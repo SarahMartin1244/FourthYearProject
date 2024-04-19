@@ -1,0 +1,3557 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment Ticketing System API  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1 \par
+}}Ticketing System API}
+{\comment Generated by doxygen 1.10.0.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Ticketing System API}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1\par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Package List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the packages with brief descriptions (if available):}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b TicketingApplicationAPI} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Context} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Controllers} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Migrations} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Models} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+ControllerBase
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+TicketingApplicationAPI.Controllers.TicketController\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+TicketingApplicationAPI.Controllers.UserController\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+DbContext
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+TicketingApplicationAPI.Context.AppDbContext\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+Migration
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+TicketingApplicationAPI.Migrations.v1\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+TicketingApplicationAPI.Migrations.v2\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+ModelSnapshot
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+PasswordHasher\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+TicketingApplicationAPI.Models.Ticket\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+TicketingApplicationAPI.Models.User\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b TicketingApplicationAPI.Context.AppDbContext} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PasswordHasher} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Models.Ticket} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Controllers.TicketController} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Models.User} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Controllers.UserController} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Migrations.v1} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TicketingApplicationAPI.Migrations.v2} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Program.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Context/{\b AppDbContext.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Controllers/{\b TicketController.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Controllers/{\b UserController.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Helpers/{\b PasswordHasher.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Migrations/{\b 20240114211831_v1.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Migrations/{\b 20240114211831_v1.Designer.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Migrations/{\b 20240128170451_v2.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Migrations/{\b 20240128170451_v2.Designer.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Migrations/{\b AppDbContextModelSnapshot.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Models/{\b Ticket.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b Models/{\b User.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net6.0/{\b .NETCoreApp,Version=v6.0.AssemblyAttributes.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net6.0/{\b TicketingApplicationAPI.AssemblyInfo.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net6.0/{\b TicketingApplicationAPI.GlobalUsings.g.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b obj/Debug/net6.0/{\b TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI}
+{\xe \v TicketingApplicationAPI}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Context}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Controllers}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Migrations}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b Models}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Context Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Context}
+{\xe \v TicketingApplicationAPI.Context}
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b AppDbContext}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Controllers Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Controllers}
+{\xe \v TicketingApplicationAPI.Controllers}
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketController}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b UserController}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Migrations Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Migrations}
+{\xe \v TicketingApplicationAPI.Migrations}
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b AppDbContextModelSnapshot}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b v1}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b v2}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Models Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Models}
+{\xe \v TicketingApplicationAPI.Models}
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Ticket}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b User}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Context.AppDbContext Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Context.AppDbContext}
+{\xe \v TicketingApplicationAPI.Context.AppDbContext}
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+Inheritance diagram for TicketingApplicationAPI.Context.AppDbContext:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_ticketing_application_a_p_i_1_1_context_1_1_app_db_context.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b AppDbContext} (DbContextOptions< {\b AppDbContext} > options)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b OnModelCreating} (ModelBuilder modelBuilder)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+DbSet< {\b User} > {\b Users}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+DbSet< {\b Ticket} > {\b Tickets}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 7} of file {\b AppDbContext.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v AppDbContext\:TicketingApplicationAPI.Context.AppDbContext}
+{\xe \v TicketingApplicationAPI.Context.AppDbContext\:AppDbContext}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TicketingApplicationAPI.Context.AppDbContext.AppDbContext (DbContextOptions< {\b AppDbContext} >  {\i options})}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 10} of file {\b AppDbContext.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v OnModelCreating\:TicketingApplicationAPI.Context.AppDbContext}
+{\xe \v TicketingApplicationAPI.Context.AppDbContext\:OnModelCreating}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Context.AppDbContext.OnModelCreating (ModelBuilder  {\i modelBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 19} of file {\b AppDbContext.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Tickets\:TicketingApplicationAPI.Context.AppDbContext}
+{\xe \v TicketingApplicationAPI.Context.AppDbContext\:Tickets}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DbSet<{\b Ticket}> TicketingApplicationAPI.Context.AppDbContext.Tickets{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 16} of file {\b AppDbContext.cs}.}\par
+}
+{\xe \v Users\:TicketingApplicationAPI.Context.AppDbContext}
+{\xe \v TicketingApplicationAPI.Context.AppDbContext\:Users}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DbSet<{\b User}> TicketingApplicationAPI.Context.AppDbContext.Users{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 15} of file {\b AppDbContext.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Context/{\b AppDbContext.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot}
+{\xe \v TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot}
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+Inheritance diagram for TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_ticketing_application_a_p_i_1_1_migrations_1_1_app_db_context_model_snapshot.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b BuildModel} (ModelBuilder modelBuilder)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 14} of file {\b AppDbContextModelSnapshot.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v BuildModel\:TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot}
+{\xe \v TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot\:BuildModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot.BuildModel (ModelBuilder  {\i modelBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 16} of file {\b AppDbContextModelSnapshot.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Migrations/{\b AppDbContextModelSnapshot.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PasswordHasher Class Reference\par \pard\plain 
+{\tc\tcl2 \v PasswordHasher}
+{\xe \v PasswordHasher}
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b HashPassword} (string password)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b VerifyPassword} (string password, string base64Hash)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 3} of file {\b PasswordHasher.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v HashPassword\:PasswordHasher}
+{\xe \v PasswordHasher\:HashPassword}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string PasswordHasher.HashPassword (string  {\i password}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 10} of file {\b PasswordHasher.cs}.}\par
+}
+{\xe \v VerifyPassword\:PasswordHasher}
+{\xe \v PasswordHasher\:VerifyPassword}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool PasswordHasher.VerifyPassword (string  {\i password}, string  {\i base64Hash}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 28} of file {\b PasswordHasher.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Helpers/{\b PasswordHasher.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Models.Ticket Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket}
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b TicketID}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int? {\b UserID}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b User} {\b User}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int? {\b AssignedRoleID}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string? {\b Status}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Subject}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Priority}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Description}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b AssignedTo}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+DateTime? {\b DateCreated} = DateTime.UtcNow.AddHours(1){\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b DateResolved}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b UserFirstName}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b UserLastName}{\f2  [get]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b FormattedDateCreated}{\f2  [get]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 7} of file {\b Ticket.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v AssignedRoleID\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:AssignedRoleID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int? TicketingApplicationAPI.Models.Ticket.AssignedRoleID{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 18} of file {\b Ticket.cs}.}\par
+}
+{\xe \v AssignedTo\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:AssignedTo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TicketingApplicationAPI.Models.Ticket.AssignedTo{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 25} of file {\b Ticket.cs}.}\par
+}
+{\xe \v DateCreated\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:DateCreated}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DateTime? TicketingApplicationAPI.Models.Ticket.DateCreated = DateTime.UtcNow.AddHours(1){\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 31} of file {\b Ticket.cs}.}\par
+}
+{\xe \v DateResolved\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:DateResolved}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.DateResolved{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 32} of file {\b Ticket.cs}.}\par
+}
+{\xe \v Description\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:Description}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.Description{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 24} of file {\b Ticket.cs}.}\par
+}
+{\xe \v FormattedDateCreated\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:FormattedDateCreated}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.FormattedDateCreated{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 43} of file {\b Ticket.cs}.}\par
+}
+{\xe \v Priority\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:Priority}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.Priority{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 23} of file {\b Ticket.cs}.}\par
+}
+{\xe \v Status\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:Status}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string? TicketingApplicationAPI.Models.Ticket.Status{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 21} of file {\b Ticket.cs}.}\par
+}
+{\xe \v Subject\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:Subject}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.Subject{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 22} of file {\b Ticket.cs}.}\par
+}
+{\xe \v TicketID\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:TicketID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TicketingApplicationAPI.Models.Ticket.TicketID{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 10} of file {\b Ticket.cs}.}\par
+}
+{\xe \v User\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:User}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual {\b User} TicketingApplicationAPI.Models.Ticket.User{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 16} of file {\b Ticket.cs}.}\par
+}
+{\xe \v UserFirstName\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:UserFirstName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.UserFirstName{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 36} of file {\b Ticket.cs}.}\par
+}
+{\xe \v UserID\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:UserID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int? TicketingApplicationAPI.Models.Ticket.UserID{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 13} of file {\b Ticket.cs}.}\par
+}
+{\xe \v UserLastName\:TicketingApplicationAPI.Models.Ticket}
+{\xe \v TicketingApplicationAPI.Models.Ticket\:UserLastName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.Ticket.UserLastName{\f2 [get]}}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 39} of file {\b Ticket.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Models/{\b Ticket.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Controllers.TicketController Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController}
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+Inheritance diagram for TicketingApplicationAPI.Controllers.TicketController:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_ticketing_application_a_p_i_1_1_controllers_1_1_ticket_controller.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TicketController} ({\b AppDbContext} appDbContext)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+IActionResult {\b CreateTicket} ([FromBody] {\b Ticket} ticketObj)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+async Task< ActionResult< IEnumerable< {\b Ticket} > > > {\b GetTicketsForUser} (int userId)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+async Task< ActionResult< IEnumerable< {\b Ticket} > > > {\b GetSharedQueueTickets} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+IActionResult {\b TakeOver} (int ticketId)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+async Task< ActionResult< IEnumerable< {\b Ticket} > > > {\b UpdateAssignQueue} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+IActionResult {\b ResolveTicket} (int ticketId)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 14} of file {\b TicketController.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v TicketController\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:TicketController}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TicketingApplicationAPI.Controllers.TicketController.TicketController ({\b AppDbContext}  {\i appDbContext})}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 18} of file {\b TicketController.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v CreateTicket\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:CreateTicket}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IActionResult TicketingApplicationAPI.Controllers.TicketController.CreateTicket ([FromBody] {\b Ticket}  {\i ticketObj})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 53} of file {\b TicketController.cs}.}\par
+}
+{\xe \v GetSharedQueueTickets\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:GetSharedQueueTickets}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+async Task< ActionResult< IEnumerable< {\b Ticket} > > > TicketingApplicationAPI.Controllers.TicketController.GetSharedQueueTickets ()}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 138} of file {\b TicketController.cs}.}\par
+}
+{\xe \v GetTicketsForUser\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:GetTicketsForUser}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+async Task< ActionResult< IEnumerable< {\b Ticket} > > > TicketingApplicationAPI.Controllers.TicketController.GetTicketsForUser (int  {\i userId})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 89} of file {\b TicketController.cs}.}\par
+}
+{\xe \v ResolveTicket\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:ResolveTicket}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IActionResult TicketingApplicationAPI.Controllers.TicketController.ResolveTicket (int  {\i ticketId})}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 258} of file {\b TicketController.cs}.}\par
+}
+{\xe \v TakeOver\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:TakeOver}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IActionResult TicketingApplicationAPI.Controllers.TicketController.TakeOver (int  {\i ticketId})}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 185} of file {\b TicketController.cs}.}\par
+}
+{\xe \v UpdateAssignQueue\:TicketingApplicationAPI.Controllers.TicketController}
+{\xe \v TicketingApplicationAPI.Controllers.TicketController\:UpdateAssignQueue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+async Task< ActionResult< IEnumerable< {\b Ticket} > > > TicketingApplicationAPI.Controllers.TicketController.UpdateAssignQueue ()}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 226} of file {\b TicketController.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Controllers/{\b TicketController.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Models.User Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User}
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Id}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b FirstName}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b LastName}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Username}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Password}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Token}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Role}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int? {\b RoleID}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Email}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 5} of file {\b User.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Email\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:Email}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.Email{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 19} of file {\b User.cs}.}\par
+}
+{\xe \v FirstName\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:FirstName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.FirstName{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 9} of file {\b User.cs}.}\par
+}
+{\xe \v Id\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:Id}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int TicketingApplicationAPI.Models.User.Id{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 8} of file {\b User.cs}.}\par
+}
+{\xe \v LastName\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:LastName}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.LastName{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 10} of file {\b User.cs}.}\par
+}
+{\xe \v Password\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:Password}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.Password{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 12} of file {\b User.cs}.}\par
+}
+{\xe \v Role\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:Role}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.Role{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 15} of file {\b User.cs}.}\par
+}
+{\xe \v RoleID\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:RoleID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int? TicketingApplicationAPI.Models.User.RoleID{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 17} of file {\b User.cs}.}\par
+}
+{\xe \v Token\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:Token}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.Token{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 14} of file {\b User.cs}.}\par
+}
+{\xe \v Username\:TicketingApplicationAPI.Models.User}
+{\xe \v TicketingApplicationAPI.Models.User\:Username}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string TicketingApplicationAPI.Models.User.Username{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 11} of file {\b User.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Models/{\b User.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Controllers.UserController Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Controllers.UserController}
+{\xe \v TicketingApplicationAPI.Controllers.UserController}
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+Inheritance diagram for TicketingApplicationAPI.Controllers.UserController:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_ticketing_application_a_p_i_1_1_controllers_1_1_user_controller.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b UserController} ({\b AppDbContext} appDbContext)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+async Task< IActionResult > {\b Authenticate} ([FromBody] {\b User} userObj)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+async Task< IActionResult > {\b SignUp} ([FromBody] {\b User} userObj)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+async Task< ActionResult< {\b User} > > {\b GetUsers} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 20} of file {\b UserController.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v UserController\:TicketingApplicationAPI.Controllers.UserController}
+{\xe \v TicketingApplicationAPI.Controllers.UserController\:UserController}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TicketingApplicationAPI.Controllers.UserController.UserController ({\b AppDbContext}  {\i appDbContext})}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 24} of file {\b UserController.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Authenticate\:TicketingApplicationAPI.Controllers.UserController}
+{\xe \v TicketingApplicationAPI.Controllers.UserController\:Authenticate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+async Task< IActionResult > TicketingApplicationAPI.Controllers.UserController.Authenticate ([FromBody] {\b User}  {\i userObj})}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 30} of file {\b UserController.cs}.}\par
+}
+{\xe \v GetUsers\:TicketingApplicationAPI.Controllers.UserController}
+{\xe \v TicketingApplicationAPI.Controllers.UserController\:GetUsers}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+async Task< ActionResult< {\b User} > > TicketingApplicationAPI.Controllers.UserController.GetUsers ()}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 184} of file {\b UserController.cs}.}\par
+}
+{\xe \v SignUp\:TicketingApplicationAPI.Controllers.UserController}
+{\xe \v TicketingApplicationAPI.Controllers.UserController\:SignUp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+async Task< IActionResult > TicketingApplicationAPI.Controllers.UserController.SignUp ([FromBody] {\b User}  {\i userObj})}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 68} of file {\b UserController.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Controllers/{\b UserController.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Migrations.v1 Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Migrations.v1}
+{\xe \v TicketingApplicationAPI.Migrations.v1}
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+Inheritance diagram for TicketingApplicationAPI.Migrations.v1:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_ticketing_application_a_p_i_1_1_migrations_1_1v1.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b Up} (MigrationBuilder migrationBuilder)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b Down} (MigrationBuilder migrationBuilder)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b BuildTargetModel} (ModelBuilder modelBuilder)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 7} of file {\b 20240114211831_v1.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v BuildTargetModel\:TicketingApplicationAPI.Migrations.v1}
+{\xe \v TicketingApplicationAPI.Migrations.v1\:BuildTargetModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.v1.BuildTargetModel (ModelBuilder  {\i modelBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 17} of file {\b 20240114211831_v1.Designer.cs}.}\par
+}
+{\xe \v Down\:TicketingApplicationAPI.Migrations.v1}
+{\xe \v TicketingApplicationAPI.Migrations.v1\:Down}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.v1.Down (MigrationBuilder  {\i migrationBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 31} of file {\b 20240114211831_v1.cs}.}\par
+}
+{\xe \v Up\:TicketingApplicationAPI.Migrations.v1}
+{\xe \v TicketingApplicationAPI.Migrations.v1\:Up}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.v1.Up (MigrationBuilder  {\i migrationBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 9} of file {\b 20240114211831_v1.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Migrations/{\b 20240114211831_v1.cs}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Migrations/{\b 20240114211831_v1.Designer.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.Migrations.v2 Class Reference\par \pard\plain 
+{\tc\tcl2 \v TicketingApplicationAPI.Migrations.v2}
+{\xe \v TicketingApplicationAPI.Migrations.v2}
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+Inheritance diagram for TicketingApplicationAPI.Migrations.v2:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_ticketing_application_a_p_i_1_1_migrations_1_1v2.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b Up} (MigrationBuilder migrationBuilder)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b Down} (MigrationBuilder migrationBuilder)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+override void {\b BuildTargetModel} (ModelBuilder modelBuilder)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 8} of file {\b 20240128170451_v2.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v BuildTargetModel\:TicketingApplicationAPI.Migrations.v2}
+{\xe \v TicketingApplicationAPI.Migrations.v2\:BuildTargetModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.v2.BuildTargetModel (ModelBuilder  {\i modelBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 18} of file {\b 20240128170451_v2.Designer.cs}.}\par
+}
+{\xe \v Down\:TicketingApplicationAPI.Migrations.v2}
+{\xe \v TicketingApplicationAPI.Migrations.v2\:Down}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.v2.Down (MigrationBuilder  {\i migrationBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 99} of file {\b 20240128170451_v2.cs}.}\par
+}
+{\xe \v Up\:TicketingApplicationAPI.Migrations.v2}
+{\xe \v TicketingApplicationAPI.Migrations.v2\:Up}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+override void TicketingApplicationAPI.Migrations.v2.Up (MigrationBuilder  {\i migrationBuilder}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 10} of file {\b 20240128170451_v2.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Migrations/{\b 20240128170451_v2.cs}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Migrations/{\b 20240128170451_v2.Designer.cs}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Context/AppDbContext.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Context/AppDbContext.cs}
+{\xe \v Context/AppDbContext.cs}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Context.AppDbContext}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Context}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+AppDbContext.cs\par \pard\plain 
+{\tc\tcl2 \v Context/AppDbContext.cs}
+{\xe \v Context/AppDbContext.cs}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00002 {\cf17 using }TicketingApplicationAPI.Models;\par
+00003 \par
+00004 {\cf17 namespace }TicketingApplicationAPI.Context\par
+00005 \{\par
+00006     {\cf20 // Represents the database context for the application derived from DbContext.}\par
+00007     {\cf17 public} {\cf17 class }AppDbContext : DbContext\par
+00008     \{\par
+00009         {\cf20 // Constructor to initialize the AppDbContext with DbContextOptions.}\par
+00010         {\cf17 public} AppDbContext(DbContextOptions<AppDbContext> options) : base(options)\par
+00011         \{\par
+00012         \}\par
+00013 \par
+00014         {\cf20 // Represents the DbSet for the user entity in the database.}\par
+00015         {\cf17 public} DbSet<User> Users \{ {\cf17 get}; {\cf17 set}; \}\par
+00016         {\cf17 public} DbSet<Ticket> Tickets \{ {\cf17 get}; {\cf17 set}; \}\par
+00017 \par
+00018         {\cf20 // Overrides the OnModelCreating method to configure the model being generated for the database.}\par
+00019         {\cf17 protected} {\cf17 override} {\cf18 void} OnModelCreating(ModelBuilder modelBuilder)\par
+00020         \{\par
+00021             {\cf20 // Configures the User entity to be mapped to the "users" table in the database.}\par
+00022             modelBuilder.Entity<User>().ToTable({\cf22 "users"});\par
+00023             modelBuilder.Entity<Ticket>().ToTable({\cf22 "tickets"});\par
+00024 \par
+00025 \par
+00026         \}\par
+00027 \par
+00028         \par
+00029 \par
+00030        \par
+00031     \}\par
+00032 \par
+00033 \par
+00034 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Controllers/TicketController.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Controllers/TicketController.cs}
+{\xe \v Controllers/TicketController.cs}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Controllers.TicketController}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Controllers}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketController.cs\par \pard\plain 
+{\tc\tcl2 \v Controllers/TicketController.cs}
+{\xe \v Controllers/TicketController.cs}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }Microsoft.AspNetCore.Authorization;\par
+00002 {\cf17 using }Microsoft.AspNetCore.Http;\par
+00003 {\cf17 using }Microsoft.AspNetCore.Mvc;\par
+00004 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00005 {\cf17 using }System;\par
+00006 {\cf17 using }System.Linq;\par
+00007 {\cf17 using }TicketingApplicationAPI.Context;\par
+00008 {\cf17 using }TicketingApplicationAPI.Models;\par
+00009 \par
+00010 {\cf17 namespace }TicketingApplicationAPI.Controllers\par
+00011 \{\par
+00012     [Route({\cf22 "api/[controller]"})]\par
+00013     [ApiController]\par
+00014     {\cf17 public} {\cf17 class }TicketController : ControllerBase\par
+00015     \{\par
+00016         {\cf17 private} readonly AppDbContext _authContext;\par
+00017 \par
+00018         {\cf17 public} TicketController(AppDbContext appDbContext)\par
+00019         \{\par
+00020             _authContext = appDbContext;\par
+00021         \}\par
+00022 \par
+00023         {\cf20 // Method to check if a user is logged in and get their user ID}\par
+00024         {\cf17 private} {\cf18 int}? GetLoggedInUserId()\par
+00025         \{\par
+00026             var userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == {\cf22 "UserId"});\par
+00027 \par
+00028             {\cf19 if} (userIdClaim != {\cf17 null} && {\cf18 int}.TryParse(userIdClaim.Value, out var userId))\par
+00029             \{\par
+00030                 {\cf19 return} userId;\par
+00031             \}\par
+00032 \par
+00033             {\cf19 return} {\cf17 null}; {\cf20 // User is not logged in or user ID couldn't be parsed}\par
+00034         \}\par
+00035 \par
+00036         {\cf20 // method to compare the user's RoleID to the ticket's AssignedRoleID}\par
+00037         {\cf17 private} {\cf18 bool} IsUserAuthorized({\cf18 int} userId, {\cf18 int} roleId)\par
+00038         \{\par
+00039             {\cf20 // Retrieve the user from the database based on the user ID}\par
+00040             var user = _authContext.Users.FirstOrDefault(u => u.Id == userId);\par
+00041 \par
+00042             {\cf19 if} (user == {\cf17 null})\par
+00043             \{\par
+00044                 {\cf19 return} {\cf17 false};\par
+00045             \}\par
+00046 \par
+00047             {\cf20 // Check if the user's RoleID matches the required RoleID}\par
+00048             {\cf19 return} user.RoleID == roleId;\par
+00049         \}\par
+00050 \par
+00051 \par
+00052         [HttpPost({\cf22 "createTicket"})]\par
+00053         {\cf17 public} IActionResult CreateTicket([FromBody] Ticket ticketObj)\par
+00054         \{\par
+00055             {\cf19 try}\par
+00056             \{\par
+00057                 {\cf20 // Get the logged-in user's ID}\par
+00058                 var loggedInUserId = GetLoggedInUserId();\par
+00059 \par
+00060                 {\cf19 if} (!loggedInUserId.HasValue)\par
+00061                 \{\par
+00062                     {\cf20 // User is not logged in}\par
+00063                     {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not logged in"} \});\par
+00064                 \}\par
+00065 \par
+00066                 {\cf20 // Log the user ID for debugging}\par
+00067                 Console.WriteLine(${\cf22 "Debug: Logged-in User ID: \{loggedInUserId.Value\}"});\par
+00068 \par
+00069                 {\cf20 // Set the UserID property of the ticket with the logged-in user's ID}\par
+00070                 ticketObj.UserID = loggedInUserId.Value;\par
+00071 \par
+00072                 {\cf20 // Save the ticket to the database using the DbContext}\par
+00073                 _authContext.Tickets.Add(ticketObj);\par
+00074                 _authContext.SaveChanges();\par
+00075 \par
+00076                 {\cf19 return} Ok({\cf17 new}\par
+00077                 \{\par
+00078                     Message = {\cf22 "Ticket Created"}\par
+00079                 \});\par
+00080             \}\par
+00081             {\cf19 catch} (Exception ex)\par
+00082             \{\par
+00083                 {\cf20 // Log any exceptions for debugging}\par
+00084                 Console.WriteLine(${\cf22 "Exception in CreateTicket method: \{ex\}"});\par
+00085                 {\cf19 return} StatusCode(500, {\cf17 new} \{ Message = {\cf22 "Internal Server Error"}, Error = ex.ToString() \});\par
+00086             \}\par
+00087         \}\par
+00088         [HttpGet({\cf22 "GetTicketsForUser/\{userId\}"})]\par
+00089         {\cf17 public} async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsForUser({\cf18 int} userId)\par
+00090         \{\par
+00091             {\cf20 // Retrieve the tickets for the specified user ID}\par
+00092             var tickets = await _authContext.Tickets\par
+00093                 .Where(t => t.UserID == userId)\par
+00094                 .ToListAsync();\par
+00095 \par
+00096             {\cf19 return} Ok(tickets);\par
+00097         \}\par
+00098 \par
+00099 \par
+00100         {\cf20 //[HttpGet("sharedQueue")]}\par
+00101         {\cf20 //[Authorize] // Allow any authenticated user to access shared queue tickets}\par
+00102         {\cf20 //public async Task<ActionResult<IEnumerable<Ticket>>> GetSharedQueueTickets()}\par
+00103         {\cf20 //\{}\par
+00104         {\cf20 //    // Retrieve tickets from the shared queue (tickets not assigned to any user)}\par
+00105         {\cf20 //    var tickets = await _authContext.Tickets}\par
+00106         {\cf20 //        .Where(t => t.AssignedTo == null)}\par
+00107         {\cf20 //        .ToListAsync();}\par
+00108 \par
+00109         {\cf20 //    return Ok(tickets);}\par
+00110         {\cf20 //\}}\par
+00111 \par
+00112 \par
+00113         {\cf20 // Method to get all tickets assigned to the logged-in user}\par
+00114         {\cf20 //[HttpGet("myTickets")]}\par
+00115         {\cf20 //public async Task<ActionResult<IEnumerable<Ticket>>> GetMyTickets()}\par
+00116         {\cf20 //\{}\par
+00117         {\cf20 //    // Get the logged-in user's ID}\par
+00118         {\cf20 //    var loggedInUserId = GetLoggedInUserId();}\par
+00119 \par
+00120         {\cf20 //    if (!loggedInUserId.HasValue)}\par
+00121         {\cf20 //    \{}\par
+00122         {\cf20 //        // User is not logged in}\par
+00123         {\cf20 //        return Unauthorized(new \{ Message = "User not logged in" \});}\par
+00124         {\cf20 //    \}}\par
+00125 \par
+00126         {\cf20 //    // Retrieve tickets assigned to the logged-in user}\par
+00127         {\cf20 //    var tickets = await _authContext.Tickets}\par
+00128         {\cf20 //        .Where(t => t.AssignedTo == loggedInUserId.Value)}\par
+00129         {\cf20 //        .ToListAsync();}\par
+00130 \par
+00131         {\cf20 //    return Ok(tickets);}\par
+00132         {\cf20 //\}}\par
+00133 \par
+00134 \par
+00135 \par
+00136         [HttpGet({\cf22 "sharedQueue"})]\par
+00137         [Authorize]\par
+00138         {\cf17 public} async Task<ActionResult<IEnumerable<Ticket>>> GetSharedQueueTickets()\par
+00139         \{\par
+00140             var loggedInUserId = GetLoggedInUserId();\par
+00141 \par
+00142             {\cf19 if} (!loggedInUserId.HasValue)\par
+00143             \{\par
+00144                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not logged in"} \});\par
+00145             \}\par
+00146 \par
+00147             {\cf20 // Retrieve the user's role ID}\par
+00148             var user = await _authContext.Users.FirstOrDefaultAsync(u => u.Id == loggedInUserId.Value);\par
+00149             {\cf19 if} (user == {\cf17 null})\par
+00150             \{\par
+00151                 {\cf19 return} NotFound({\cf17 new} \{ Message = {\cf22 "User not found"} \});\par
+00152             \}\par
+00153 \par
+00154             {\cf20 // Use the user's role ID as the required role ID}\par
+00155             var requiredRoleId = user.RoleID;\par
+00156 \par
+00157             {\cf20 // Check if the user is authorized to access the shared queue}\par
+00158             {\cf19 if} (!IsUserAuthorized(loggedInUserId.Value, ({\cf18 int})requiredRoleId))\par
+00159             \{\par
+00160                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not authorized to access shared queue"} \});\par
+00161             \}\par
+00162 \par
+00163             {\cf20 // Retrieve tickets from the shared queue with the assigned role ID matching the user's role ID}\par
+00164             var tickets = await _authContext.Tickets\par
+00165                 .Where(t => t.AssignedTo == 0 && t.AssignedRoleID == requiredRoleId)\par
+00166                 .ToListAsync();\par
+00167 \par
+00168             {\cf20 // Set the status of each ticket to "In Queue"}\par
+00169             {\cf19 foreach} (var ticket {\cf19 in} tickets)\par
+00170             \{\par
+00171                 ticket.Status = {\cf22 "In Queue"};\par
+00172             \}\par
+00173 \par
+00174             {\cf20 // Save changes to the database (optional, if needed)}\par
+00175             await _authContext.SaveChangesAsync();\par
+00176 \par
+00177             {\cf19 return} Ok(tickets);\par
+00178         \}\par
+00179 \par
+00180 \par
+00181 \par
+00182         {\cf20 // create api called takeover that will allow a user to take over a ticket from the shared queue and assign it to themselves we will pass the ticket id as a parameter and the user id will be taken from the logged in user when a user takes over a ticket the assigned to field should be updated with the user id}\par
+00183         [HttpPost({\cf22 "takeover/\{ticketId\}"})]\par
+00184         [Authorize]\par
+00185         {\cf17 public} IActionResult TakeOver({\cf18 int} ticketId)\par
+00186         \{\par
+00187             {\cf20 // Get the logged-in user's ID}\par
+00188             var loggedInUserId = GetLoggedInUserId();\par
+00189 \par
+00190             {\cf19 if} (!loggedInUserId.HasValue)\par
+00191             \{\par
+00192                 {\cf20 // User is not logged in}\par
+00193                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not logged in"} \});\par
+00194             \}\par
+00195 \par
+00196             {\cf20 // Check if the user is authorized to access the shared queue}\par
+00197             {\cf19 if} (!IsUserAuthorized(loggedInUserId.Value, 1))\par
+00198             \{\par
+00199                 {\cf20 // User is not authorized}\par
+00200                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not authorized to access shared queue"} \});\par
+00201             \}\par
+00202 \par
+00203             {\cf20 // Retrieve the ticket from the database}\par
+00204             var ticket = _authContext.Tickets.FirstOrDefault(t => t.TicketID == ticketId);\par
+00205 \par
+00206             {\cf19 if} (ticket == {\cf17 null})\par
+00207             \{\par
+00208                 {\cf20 // Ticket not found}\par
+00209                 {\cf19 return} NotFound({\cf17 new} \{ Message = {\cf22 "Ticket not found"} \});\par
+00210             \}\par
+00211 \par
+00212             {\cf20 // Assign the ticket to the logged-in user}\par
+00213             ticket.AssignedTo = loggedInUserId.Value;\par
+00214 \par
+00215             {\cf20 // Update the ticket in the database}\par
+00216             _authContext.Tickets.Update(ticket);\par
+00217             _authContext.SaveChanges();\par
+00218 \par
+00219             {\cf19 return} Ok({\cf17 new} \{ Message = {\cf22 "Ticket assigned to user"} \});\par
+00220         \}\par
+00221 \par
+00222         {\cf20 // create api called updateassignqueue that now displays all tickets assigned to the logged in user}\par
+00223         {\cf20 // create api called updateassignqueue that now displays all tickets assigned to the logged in user}\par
+00224         [HttpGet({\cf22 "updateassignqueue"})]\par
+00225         [Authorize]\par
+00226         {\cf17 public} async Task<ActionResult<IEnumerable<Ticket>>> UpdateAssignQueue()\par
+00227         \{\par
+00228             {\cf20 // Get the logged-in user's ID}\par
+00229             var loggedInUserId = GetLoggedInUserId();\par
+00230 \par
+00231             {\cf19 if} (!loggedInUserId.HasValue)\par
+00232             \{\par
+00233                 {\cf20 // User is not logged in}\par
+00234                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not logged in"} \});\par
+00235             \}\par
+00236 \par
+00237             {\cf20 // Retrieve tickets assigned to the logged-in user}\par
+00238             var tickets = await _authContext.Tickets\par
+00239                 .Where(t => t.AssignedTo == loggedInUserId.Value)\par
+00240                 .ToListAsync();\par
+00241 \par
+00242 \par
+00243             {\cf20 // Set the status of each ticket to "In Queue"}\par
+00244             {\cf19 foreach} (var ticket {\cf19 in} tickets)\par
+00245             \{\par
+00246                 ticket.Status = {\cf22 "In Progress"};\par
+00247             \}\par
+00248 \par
+00249             {\cf20 // Save changes to the database (optional, if needed)}\par
+00250             await _authContext.SaveChangesAsync();\par
+00251             {\cf19 return} Ok(tickets);\par
+00252         \}\par
+00253 \par
+00254 \par
+00255         {\cf20 // create an api called resolve that will allow a user to resolve a ticket we will pass the ticket id as a parameter and the user id will be taken from the logged in user when a user resolves a ticket the status field should be updated to resolved and the date resolved field should be updated with the current date and time}\par
+00256         [HttpPost({\cf22 "resolve/\{ticketId\}"})]\par
+00257         [Authorize]\par
+00258         {\cf17 public} IActionResult ResolveTicket({\cf18 int} ticketId)\par
+00259         \{\par
+00260             {\cf20 // Get the logged-in user's ID}\par
+00261             var loggedInUserId = GetLoggedInUserId();\par
+00262 \par
+00263             {\cf19 if} (!loggedInUserId.HasValue)\par
+00264             \{\par
+00265                 {\cf20 // User is not logged in}\par
+00266                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "User not logged in"} \});\par
+00267             \}\par
+00268 \par
+00269             {\cf20 // Retrieve the ticket from the database}\par
+00270             var ticket = _authContext.Tickets.FirstOrDefault(t => t.TicketID == ticketId);\par
+00271 \par
+00272             {\cf19 if} (ticket == {\cf17 null})\par
+00273             \{\par
+00274                 {\cf20 // Ticket not found}\par
+00275                 {\cf19 return} NotFound({\cf17 new} \{ Message = {\cf22 "Ticket not found"} \});\par
+00276             \}\par
+00277 \par
+00278             {\cf20 // Check if the ticket is assigned to the logged-in user}\par
+00279             {\cf19 if} (ticket.AssignedTo != loggedInUserId.Value)\par
+00280             \{\par
+00281                 {\cf20 // Ticket is not assigned to the user}\par
+00282                 {\cf19 return} Unauthorized({\cf17 new} \{ Message = {\cf22 "Ticket not assigned to user"} \});\par
+00283             \}\par
+00284 \par
+00285             {\cf20 // Update the ticket status to "Resolved"}\par
+00286             ticket.Status = {\cf22 "Resolved"};\par
+00287 \par
+00288             {\cf20 // Update the date resolved to the current date and time}\par
+00289             ticket.DateResolved = DateTime.UtcNow.ToString({\cf22 "dddd, dd MMMM yyyy h:mm tt"});\par
+00290 \par
+00291             {\cf20 // Remove the resolved ticket from the shared queue}\par
+00292             ticket.AssignedTo = 0;\par
+00293 \par
+00294             {\cf20 // Update the ticket in the database}\par
+00295             _authContext.Tickets.Update(ticket);\par
+00296             _authContext.SaveChanges();\par
+00297 \par
+00298           \par
+00299 \par
+00300 \par
+00301            \par
+00302 \par
+00303             {\cf19 return} Ok({\cf17 new} \{ Message = {\cf22 "Ticket resolved"} \});\par
+00304         \}\par
+00305     \}\par
+00306 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Controllers/UserController.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Controllers/UserController.cs}
+{\xe \v Controllers/UserController.cs}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Controllers.UserController}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Controllers}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+UserController.cs\par \pard\plain 
+{\tc\tcl2 \v Controllers/UserController.cs}
+{\xe \v Controllers/UserController.cs}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System;\par
+00002 {\cf17 using }System.IdentityModel.Tokens.Jwt;\par
+00003 {\cf17 using }System.Text;\par
+00004 {\cf17 using }System.Text.RegularExpressions;\par
+00005 {\cf17 using }System.Threading.Tasks;\par
+00006 {\cf17 using }Microsoft.AspNetCore.Mvc;\par
+00007 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00008 {\cf17 using }TicketingApplicationAPI.Context;\par
+00009 {\cf20 //using TicketingApplicationAPI.Helpers;}\par
+00010 {\cf17 using }TicketingApplicationAPI.Models;\par
+00011 {\cf17 using }System;\par
+00012 {\cf17 using }System.Security.Claims;\par
+00013 {\cf17 using }Microsoft.IdentityModel.Tokens;\par
+00014 {\cf17 using }Microsoft.AspNetCore.Authorization;\par
+00015 \par
+00016 {\cf17 namespace }TicketingApplicationAPI.Controllers\par
+00017 \{\par
+00018     [Route({\cf22 "api/[controller]"})]\par
+00019     [ApiController]\par
+00020     {\cf17 public} {\cf17 class }UserController : ControllerBase\par
+00021     \{\par
+00022         {\cf17 private} readonly AppDbContext _authContext;\par
+00023 \par
+00024         {\cf17 public} UserController(AppDbContext appDbContext)\par
+00025         \{\par
+00026             _authContext = appDbContext;\par
+00027         \}\par
+00028 \par
+00029         [HttpPost({\cf22 "authenticate"})]\par
+00030         {\cf17 public} async Task<IActionResult> Authenticate([FromBody] User userObj)\par
+00031         \{\par
+00032             {\cf19 try}\par
+00033             \{\par
+00034                 {\cf20 // If user tries to send a blank form, return a bad request.}\par
+00035                 {\cf19 if} (userObj == {\cf17 null})\par
+00036                     {\cf19 return} BadRequest({\cf17 new} \{ Message = {\cf22 "Invalid user object received."} \});\par
+00037 \par
+00038                 {\cf20 // Retrieve the user from the database based on the username.}\par
+00039                 var user = await _authContext.Users.FirstOrDefaultAsync(x => x.Username == userObj.Username);\par
+00040 \par
+00041                 {\cf20 // If user isn't in the database, return a not found response.}\par
+00042                 {\cf19 if} (user == {\cf17 null})\par
+00043                     {\cf19 return} NotFound({\cf17 new} \{ Message = {\cf22 "User doesn't exist."} \});\par
+00044 \par
+00045                 {\cf20 // Verify the password using the PasswordHasher.}\par
+00046                 {\cf19 if} (!PasswordHasher.VerifyPassword(userObj.Password, user.Password))\par
+00047                     {\cf19 return} BadRequest({\cf17 new} \{ Message = {\cf22 "Invalid password."} \});\par
+00048 \par
+00049                 user.Token = CreateJwt(user);\par
+00050 \par
+00051                 {\cf20 // If authentication is successful, return an Ok response with a success message.}\par
+00052                 {\cf19 return} Ok({\cf17 new}\par
+00053                 \{\par
+00054                     Token = user.Token,\par
+00055                     Message = {\cf22 "Login successful"}\par
+00056                 \});\par
+00057             \}\par
+00058             {\cf19 catch} (Exception ex)\par
+00059             \{\par
+00060                 Console.WriteLine(${\cf22 "Exception in Authenticate method: \{ex\}"});\par
+00061                 {\cf19 return} StatusCode(500, {\cf17 new} \{ Message = {\cf22 "Internal Server Error"}, Error = ex.ToString() \});\par
+00062             \}\par
+00063         \}\par
+00064 \par
+00065 \par
+00066 \par
+00067         [HttpPost({\cf22 "SignUp"})]\par
+00068         {\cf17 public} async Task<IActionResult> SignUp([FromBody] User userObj)\par
+00069         \{\par
+00070             {\cf19 try}\par
+00071             \{\par
+00072                 {\cf19 if} (userObj == {\cf17 null})\par
+00073                 \{\par
+00074                     Console.WriteLine({\cf22 "Error: Invalid user object received in SignUp method."});\par
+00075                     {\cf19 return} BadRequest({\cf17 new} \{ Message = {\cf22 "Invalid user object received."} \});\par
+00076                 \}\par
+00077 \par
+00078                 {\cf20 // Check if username is valid.}\par
+00079                 {\cf19 if} (await CheckUserNameExistAysnc(userObj.Username))\par
+00080                 \{\par
+00081                     {\cf19 return} BadRequest({\cf17 new} \{ Message = {\cf22 "Username already exists"} \});\par
+00082                 \}\par
+00083 \par
+00084                 {\cf20 // Check if email exists.}\par
+00085                 {\cf19 if} (await CheckEmailExistAysnc(userObj.Email))\par
+00086                 \{\par
+00087                     {\cf19 return} BadRequest({\cf17 new} \{ Message = {\cf22 "Email already exists"} \});\par
+00088                 \}\par
+00089 \par
+00090                 {\cf20 // Check the strength of the password.}\par
+00091                 var pass = CheckPasswordStrenght(userObj.Password);\par
+00092                 {\cf19 if} (!{\cf18 string}.IsNullOrEmpty(pass))\par
+00093                     {\cf19 return} BadRequest({\cf17 new} \{ Message = pass \});\par
+00094 \par
+00095                 userObj.Password = PasswordHasher.HashPassword(userObj.Password);\par
+00096                 userObj.Role = {\cf22 "User"};\par
+00097                 userObj.Token = {\cf22 ""};\par
+00098 \par
+00099                 Console.WriteLine(${\cf22 "Info: Received signup request for user \{userObj.Username\}"});\par
+00100 \par
+00101                 {\cf20 // Add the new user to the Users DbSet in the database context.}\par
+00102                 _authContext.Users.Add(userObj);\par
+00103 \par
+00104                 Console.WriteLine({\cf22 "Info: Saving changes to the database..."});\par
+00105 \par
+00106                 {\cf20 // Save changes to the database.}\par
+00107                 await _authContext.SaveChangesAsync();\par
+00108 \par
+00109                 Console.WriteLine(${\cf22 "Info: User \{userObj.Username\} registered successfully."});\par
+00110 \par
+00111                 {\cf19 return} Ok({\cf17 new} \{ Message = {\cf22 "User registered successfully"} \});\par
+00112             \}\par
+00113             {\cf19 catch} (Exception ex)\par
+00114             \{\par
+00115                 Console.WriteLine(${\cf22 "Exception in SignUp method: \{ex\}"});\par
+00116                 {\cf19 return} StatusCode(500, {\cf17 new} \{ Message = {\cf22 "Internal Server Error"}, Error = ex.Message \});\par
+00117             \}\par
+00118         \}\par
+00119 \par
+00120         {\cf17 private} Task<bool> CheckUserNameExistAysnc({\cf18 string} username)\par
+00121         \{\par
+00122             {\cf19 return} _authContext.Users.AnyAsync(x => x.Username == username);\par
+00123         \}\par
+00124 \par
+00125         {\cf17 private} Task<bool> CheckEmailExistAysnc({\cf18 string} email)\par
+00126         \{\par
+00127             {\cf19 return} _authContext.Users.AnyAsync(x => x.Email == email);\par
+00128         \}\par
+00129 \par
+00130         {\cf17 private} {\cf18 string} CheckPasswordStrenght({\cf18 string} password)\par
+00131         \{\par
+00132             StringBuilder sb = {\cf17 new} StringBuilder();\par
+00133 \par
+00134             {\cf19 if} (password.Length < 8)\par
+00135             \{\par
+00136                 sb.Append({\cf22 "Password is too short (Minimum length is 8 characters)"} + Environment.NewLine);\par
+00137             \}\par
+00138             {\cf19 else}\par
+00139             \{\par
+00140                 {\cf19 if} (!(Regex.IsMatch(password, {\cf22 "[a-z]"}) && Regex.IsMatch(password, {\cf22 "[A-Z]"})\par
+00141                     && Regex.IsMatch(password, {\cf22 "[0-9]"})))\par
+00142                 \{\par
+00143                     sb.Append({\cf22 "Password should contain at least one lowercase letter, one uppercase letter, and one digit."} + Environment.NewLine);\par
+00144                 \}\par
+00145 \par
+00146                 {\cf19 if} (!Regex.IsMatch(password, {\cf22 "[<>,@!?+-]"}))\par
+00147                 \{\par
+00148                     sb.Append({\cf22 "Password should contain at least one of the following special characters: <, >, @, !, ?, +, -."} + Environment.NewLine);\par
+00149                 \}\par
+00150             \}\par
+00151 \par
+00152             {\cf19 return} sb.ToString();\par
+00153         \}\par
+00154 \par
+00155         {\cf17 private} {\cf18 string} CreateJwt(User user)\par
+00156         \{\par
+00157             var jwtTokenHandler = {\cf17 new} JwtSecurityTokenHandler();\par
+00158             var key = Encoding.ASCII.GetBytes({\cf22 "veryverysecret....."});\par
+00159            \par
+00160 \par
+00161             var identity = {\cf17 new} ClaimsIdentity({\cf17 new} Claim[]\par
+00162             \{\par
+00163         {\cf17 new} Claim(ClaimTypes.Role, user.Role),\par
+00164         {\cf17 new} Claim(ClaimTypes.Name, ${\cf22 "\{user.FirstName\} \{user.LastName\}"}),\par
+00165         {\cf17 new} Claim({\cf22 "UserId"}, user.Id.ToString()) {\cf20 // Add the user ID claim}\par
+00166             \});\par
+00167 \par
+00168             var credentials = {\cf17 new} SigningCredentials({\cf17 new} SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);\par
+00169 \par
+00170             var tokenDescriptor = {\cf17 new} SecurityTokenDescriptor\par
+00171             \{\par
+00172                 Subject = identity,\par
+00173                 Expires = DateTime.Now.AddDays(1),\par
+00174                 SigningCredentials = credentials\par
+00175             \};\par
+00176 \par
+00177             var token = jwtTokenHandler.CreateToken(tokenDescriptor);\par
+00178             {\cf19 return} jwtTokenHandler.WriteToken(token);\par
+00179         \}\par
+00180 \par
+00181 \par
+00182         [Authorize]   {\cf20 // to protect API}\par
+00183         [HttpGet]\par
+00184         {\cf17 public} async Task<ActionResult<User>> GetUsers()\par
+00185         \{\par
+00186             {\cf19 return} Ok(await _authContext.Users.ToListAsync());\par
+00187         \}\par
+00188 \par
+00189 \par
+00190         {\cf20 //[HttpGet("GetTicketsForUser")]}\par
+00191         {\cf20 //public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsForUser(int userId)}\par
+00192         {\cf20 //\{}\par
+00193         {\cf20 //    try}\par
+00194         {\cf20 //    \{}\par
+00195         {\cf20 //        // Retrieve the tickets for the logged-in user}\par
+00196         {\cf20 //        var tickets = await _authContext.Tickets}\par
+00197         {\cf20 //            .Where(t => t.User.Id == userId)}\par
+00198         {\cf20 //            .ToListAsync();}\par
+00199 \par
+00200         {\cf20 //        return Ok(tickets);}\par
+00201         {\cf20 //    \}}\par
+00202         {\cf20 //    catch (Exception ex)}\par
+00203         {\cf20 //    \{}\par
+00204         {\cf20 //        Console.WriteLine($"Exception: \{ex\}");}\par
+00205         {\cf20 //        return StatusCode(500, new \{ Message = "Internal Server Error", Error = ex.Message \});}\par
+00206         {\cf20 //    \}}\par
+00207         {\cf20 //\}}\par
+00208 \par
+00209 \par
+00210 \par
+00211 \par
+00212 \par
+00213 \par
+00214 \par
+00215 \par
+00216 \par
+00217 \par
+00218     \}\par
+00219 \par
+00220 \par
+00221 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Helpers/PasswordHasher.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Helpers/PasswordHasher.cs}
+{\xe \v Helpers/PasswordHasher.cs}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PasswordHasher}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PasswordHasher.cs\par \pard\plain 
+{\tc\tcl2 \v Helpers/PasswordHasher.cs}
+{\xe \v Helpers/PasswordHasher.cs}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Security.Cryptography;\par
+00002 \par
+00003 {\cf17 public} {\cf17 class }PasswordHasher\par
+00004 \{\par
+00005     {\cf17 private} {\cf17 static} RNGCryptoServiceProvider rng = {\cf17 new} RNGCryptoServiceProvider();\par
+00006     {\cf17 private} {\cf17 static} readonly {\cf18 int} SaltSize = 16;\par
+00007     {\cf17 private} {\cf17 static} readonly {\cf18 int} HashSize = 20;\par
+00008     {\cf17 private} {\cf17 static} readonly {\cf18 int} Iterations = 10000;\par
+00009 \par
+00010     {\cf17 public} {\cf17 static} {\cf18 string} HashPassword({\cf18 string} password)\par
+00011     \{\par
+00012         {\cf18 byte}[] salt;\par
+00013         rng.GetBytes(salt = {\cf17 new} {\cf18 byte}[SaltSize]);\par
+00014 \par
+00015         {\cf20 // Using Rfc2898DeriveBytes to derive a key from the password and salt.}\par
+00016         var key = {\cf17 new} Rfc2898DeriveBytes(password, salt, Iterations);\par
+00017         var hash = key.GetBytes(HashSize);\par
+00018 \par
+00019         var hashBytes = {\cf17 new} {\cf18 byte}[SaltSize + HashSize];\par
+00020         Array.Copy(salt, 0, hashBytes, 0, SaltSize);\par
+00021         Array.Copy(hash, 0, hashBytes, SaltSize, HashSize);\par
+00022 \par
+00023         var base64Hash = Convert.ToBase64String(hashBytes);\par
+00024 \par
+00025         {\cf19 return} base64Hash;\par
+00026     \}\par
+00027 \par
+00028     {\cf17 public} {\cf17 static} {\cf18 bool} VerifyPassword({\cf18 string} password, {\cf18 string} base64Hash)\par
+00029     \{\par
+00030         var hashBytes = Convert.FromBase64String(base64Hash);\par
+00031 \par
+00032         var salt = {\cf17 new} {\cf18 byte}[SaltSize];\par
+00033         Array.Copy(hashBytes, 0, salt, 0, SaltSize);\par
+00034         var key = {\cf17 new} Rfc2898DeriveBytes(password, salt, Iterations);\par
+00035         {\cf18 byte}[] hash = key.GetBytes(HashSize);\par
+00036 \par
+00037         {\cf19 for} ({\cf18 int} i = 0; i < HashSize; i++)\par
+00038         \{\par
+00039             {\cf19 if} (hashBytes[i + SaltSize] != hash[i])\par
+00040             \{\par
+00041                 {\cf19 return} {\cf17 false};\par
+00042             \}\par
+00043         \}\par
+00044 \par
+00045         {\cf19 return} {\cf17 true};\par
+00046     \}\par
+00047 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Migrations/20240114211831_v1.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240114211831_v1.cs}
+{\xe \v Migrations/20240114211831_v1.cs}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Migrations.v1}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Migrations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+20240114211831_v1.cs\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240114211831_v1.cs}
+{\xe \v Migrations/20240114211831_v1.cs}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }Microsoft.EntityFrameworkCore.Migrations;\par
+00002 \par
+00003 {\cf21 #nullable disable}\par
+00004 \par
+00005 {\cf17 namespace }TicketingApplicationAPI.Migrations\par
+00006 \{\par
+00007     {\cf17 public} {\cf17 partial class }v1 : Migration\par
+00008     \{\par
+00009         {\cf17 protected} {\cf17 override} {\cf18 void} Up(MigrationBuilder migrationBuilder)\par
+00010         \{\par
+00011             migrationBuilder.CreateTable(\par
+00012                 name: {\cf22 "users"},\par
+00013                 columns: table => {\cf17 new}\par
+00014                 \{\par
+00015                     Id = table.Column<{\cf18 int}>(type: {\cf22 "int"}, nullable: {\cf17 false})\par
+00016                         .Annotation({\cf22 "SqlServer:Identity"}, {\cf22 "1, 1"}),\par
+00017                     FirstName = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false}),\par
+00018                     LastName = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false}),\par
+00019                     Username = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false}),\par
+00020                     Password = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false}),\par
+00021                     Token = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false}),\par
+00022                     Role = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false}),\par
+00023                     Email = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 false})\par
+00024                 \},\par
+00025                 constraints: table =>\par
+00026                 \{\par
+00027                     table.PrimaryKey({\cf22 "PK_users"}, x => x.Id);\par
+00028                 \});\par
+00029         \}\par
+00030 \par
+00031         {\cf17 protected} {\cf17 override} {\cf18 void} Down(MigrationBuilder migrationBuilder)\par
+00032         \{\par
+00033             migrationBuilder.DropTable(\par
+00034                 name: {\cf22 "users"});\par
+00035         \}\par
+00036     \}\par
+00037 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Migrations/20240114211831_v1.Designer.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240114211831_v1.Designer.cs}
+{\xe \v Migrations/20240114211831_v1.Designer.cs}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Migrations.v1}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Migrations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+20240114211831_v1.Designer.cs\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240114211831_v1.Designer.cs}
+{\xe \v Migrations/20240114211831_v1.Designer.cs}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <auto-generated />}\par
+00002 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00003 {\cf17 using }Microsoft.EntityFrameworkCore.Infrastructure;\par
+00004 {\cf17 using }Microsoft.EntityFrameworkCore.Metadata;\par
+00005 {\cf17 using }Microsoft.EntityFrameworkCore.Migrations;\par
+00006 {\cf17 using }Microsoft.EntityFrameworkCore.Storage.ValueConversion;\par
+00007 {\cf17 using }TicketingApplicationAPI.Context;\par
+00008 \par
+00009 {\cf21 #nullable disable}\par
+00010 \par
+00011 {\cf17 namespace }TicketingApplicationAPI.Migrations\par
+00012 \{\par
+00013     [DbContext(typeof(AppDbContext))]\par
+00014     [Migration({\cf22 "20240114211831_v1"})]\par
+00015     {\cf17 partial class }v1\par
+00016     \{\par
+00017         {\cf17 protected} {\cf17 override} {\cf18 void} BuildTargetModel(ModelBuilder modelBuilder)\par
+00018         \{\par
+00019 {\cf21 #pragma warning disable 612, 618}\par
+00020             modelBuilder\par
+00021                 .HasAnnotation({\cf22 "ProductVersion"}, {\cf22 "6.0.9"})\par
+00022                 .HasAnnotation({\cf22 "Relational:MaxIdentifierLength"}, 128);\par
+00023 \par
+00024             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);\par
+00025 \par
+00026             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.User"}, b =>\par
+00027                 \{\par
+00028                     b.Property<{\cf18 int}>({\cf22 "Id"})\par
+00029                         .ValueGeneratedOnAdd()\par
+00030                         .HasColumnType({\cf22 "int"});\par
+00031 \par
+00032                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<{\cf18 int}>({\cf22 "Id"}), 1L, 1);\par
+00033 \par
+00034                     b.Property<{\cf18 string}>({\cf22 "Email"})\par
+00035                         .IsRequired()\par
+00036                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00037 \par
+00038                     b.Property<{\cf18 string}>({\cf22 "FirstName"})\par
+00039                         .IsRequired()\par
+00040                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00041 \par
+00042                     b.Property<{\cf18 string}>({\cf22 "LastName"})\par
+00043                         .IsRequired()\par
+00044                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00045 \par
+00046                     b.Property<{\cf18 string}>({\cf22 "Password"})\par
+00047                         .IsRequired()\par
+00048                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00049 \par
+00050                     b.Property<{\cf18 string}>({\cf22 "Role"})\par
+00051                         .IsRequired()\par
+00052                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00053 \par
+00054                     b.Property<{\cf18 string}>({\cf22 "Token"})\par
+00055                         .IsRequired()\par
+00056                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00057 \par
+00058                     b.Property<{\cf18 string}>({\cf22 "Username"})\par
+00059                         .IsRequired()\par
+00060                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00061 \par
+00062                     b.HasKey({\cf22 "Id"});\par
+00063 \par
+00064                     b.ToTable({\cf22 "users"}, ({\cf18 string}){\cf17 null});\par
+00065                 \});\par
+00066 {\cf21 #pragma warning restore 612, 618}\par
+00067         \}\par
+00068     \}\par
+00069 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Migrations/20240128170451_v2.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240128170451_v2.cs}
+{\xe \v Migrations/20240128170451_v2.cs}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Migrations.v2}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Migrations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+20240128170451_v2.cs\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240128170451_v2.cs}
+{\xe \v Migrations/20240128170451_v2.cs}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System;\par
+00002 {\cf17 using }Microsoft.EntityFrameworkCore.Migrations;\par
+00003 \par
+00004 {\cf21 #nullable disable}\par
+00005 \par
+00006 {\cf17 namespace }TicketingApplicationAPI.Migrations\par
+00007 \{\par
+00008     {\cf17 public} {\cf17 partial class }v2 : Migration\par
+00009     \{\par
+00010         {\cf17 protected} {\cf17 override} {\cf18 void} Up(MigrationBuilder migrationBuilder)\par
+00011         \{\par
+00012             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00013                 name: {\cf22 "Username"},\par
+00014                 table: {\cf22 "users"},\par
+00015                 type: {\cf22 "nvarchar(max)"},\par
+00016                 nullable: {\cf17 true},\par
+00017                 oldClrType: typeof({\cf18 string}),\par
+00018                 oldType: {\cf22 "nvarchar(max)"});\par
+00019 \par
+00020             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00021                 name: {\cf22 "Token"},\par
+00022                 table: {\cf22 "users"},\par
+00023                 type: {\cf22 "nvarchar(max)"},\par
+00024                 nullable: {\cf17 true},\par
+00025                 oldClrType: typeof({\cf18 string}),\par
+00026                 oldType: {\cf22 "nvarchar(max)"});\par
+00027 \par
+00028             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00029                 name: {\cf22 "Role"},\par
+00030                 table: {\cf22 "users"},\par
+00031                 type: {\cf22 "nvarchar(max)"},\par
+00032                 nullable: {\cf17 true},\par
+00033                 oldClrType: typeof({\cf18 string}),\par
+00034                 oldType: {\cf22 "nvarchar(max)"});\par
+00035 \par
+00036             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00037                 name: {\cf22 "Password"},\par
+00038                 table: {\cf22 "users"},\par
+00039                 type: {\cf22 "nvarchar(max)"},\par
+00040                 nullable: {\cf17 true},\par
+00041                 oldClrType: typeof({\cf18 string}),\par
+00042                 oldType: {\cf22 "nvarchar(max)"});\par
+00043 \par
+00044             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00045                 name: {\cf22 "LastName"},\par
+00046                 table: {\cf22 "users"},\par
+00047                 type: {\cf22 "nvarchar(max)"},\par
+00048                 nullable: {\cf17 true},\par
+00049                 oldClrType: typeof({\cf18 string}),\par
+00050                 oldType: {\cf22 "nvarchar(max)"});\par
+00051 \par
+00052             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00053                 name: {\cf22 "FirstName"},\par
+00054                 table: {\cf22 "users"},\par
+00055                 type: {\cf22 "nvarchar(max)"},\par
+00056                 nullable: {\cf17 true},\par
+00057                 oldClrType: typeof({\cf18 string}),\par
+00058                 oldType: {\cf22 "nvarchar(max)"});\par
+00059 \par
+00060             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00061                 name: {\cf22 "Email"},\par
+00062                 table: {\cf22 "users"},\par
+00063                 type: {\cf22 "nvarchar(max)"},\par
+00064                 nullable: {\cf17 true},\par
+00065                 oldClrType: typeof({\cf18 string}),\par
+00066                 oldType: {\cf22 "nvarchar(max)"});\par
+00067 \par
+00068             migrationBuilder.CreateTable(\par
+00069                 name: {\cf22 "tickets"},\par
+00070                 columns: table => {\cf17 new}\par
+00071                 \{\par
+00072                     TicketID = table.Column<{\cf18 int}>(type: {\cf22 "int"}, nullable: {\cf17 false})\par
+00073                         .Annotation({\cf22 "SqlServer:Identity"}, {\cf22 "1, 1"}),\par
+00074                     UserID = table.Column<{\cf18 int}>(type: {\cf22 "int"}, nullable: {\cf17 false}),\par
+00075                     Subject = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 true}),\par
+00076                     Priority = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 true}),\par
+00077                     Description = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 true}),\par
+00078                     AssignedTo = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 true}),\par
+00079                     DateCreated = table.Column<DateTime>(type: {\cf22 "datetime2"}, nullable: {\cf17 false}),\par
+00080                     DateResolved = table.Column<{\cf18 string}>(type: {\cf22 "nvarchar(max)"}, nullable: {\cf17 true})\par
+00081                 \},\par
+00082                 constraints: table =>\par
+00083                 \{\par
+00084                     table.PrimaryKey({\cf22 "PK_tickets"}, x => x.TicketID);\par
+00085                     table.ForeignKey(\par
+00086                         name: {\cf22 "FK_tickets_users_UserID"},\par
+00087                         column: x => x.UserID,\par
+00088                         principalTable: {\cf22 "users"},\par
+00089                         principalColumn: {\cf22 "Id"},\par
+00090                         onDelete: ReferentialAction.Cascade);\par
+00091                 \});\par
+00092 \par
+00093             migrationBuilder.CreateIndex(\par
+00094                 name: {\cf22 "IX_tickets_UserID"},\par
+00095                 table: {\cf22 "tickets"},\par
+00096                 column: {\cf22 "UserID"});\par
+00097         \}\par
+00098 \par
+00099         {\cf17 protected} {\cf17 override} {\cf18 void} Down(MigrationBuilder migrationBuilder)\par
+00100         \{\par
+00101             migrationBuilder.DropTable(\par
+00102                 name: {\cf22 "tickets"});\par
+00103 \par
+00104             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00105                 name: {\cf22 "Username"},\par
+00106                 table: {\cf22 "users"},\par
+00107                 type: {\cf22 "nvarchar(max)"},\par
+00108                 nullable: {\cf17 false},\par
+00109                 defaultValue: {\cf22 ""},\par
+00110                 oldClrType: typeof({\cf18 string}),\par
+00111                 oldType: {\cf22 "nvarchar(max)"},\par
+00112                 oldNullable: {\cf17 true});\par
+00113 \par
+00114             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00115                 name: {\cf22 "Token"},\par
+00116                 table: {\cf22 "users"},\par
+00117                 type: {\cf22 "nvarchar(max)"},\par
+00118                 nullable: {\cf17 false},\par
+00119                 defaultValue: {\cf22 ""},\par
+00120                 oldClrType: typeof({\cf18 string}),\par
+00121                 oldType: {\cf22 "nvarchar(max)"},\par
+00122                 oldNullable: {\cf17 true});\par
+00123 \par
+00124             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00125                 name: {\cf22 "Role"},\par
+00126                 table: {\cf22 "users"},\par
+00127                 type: {\cf22 "nvarchar(max)"},\par
+00128                 nullable: {\cf17 false},\par
+00129                 defaultValue: {\cf22 ""},\par
+00130                 oldClrType: typeof({\cf18 string}),\par
+00131                 oldType: {\cf22 "nvarchar(max)"},\par
+00132                 oldNullable: {\cf17 true});\par
+00133 \par
+00134             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00135                 name: {\cf22 "Password"},\par
+00136                 table: {\cf22 "users"},\par
+00137                 type: {\cf22 "nvarchar(max)"},\par
+00138                 nullable: {\cf17 false},\par
+00139                 defaultValue: {\cf22 ""},\par
+00140                 oldClrType: typeof({\cf18 string}),\par
+00141                 oldType: {\cf22 "nvarchar(max)"},\par
+00142                 oldNullable: {\cf17 true});\par
+00143 \par
+00144             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00145                 name: {\cf22 "LastName"},\par
+00146                 table: {\cf22 "users"},\par
+00147                 type: {\cf22 "nvarchar(max)"},\par
+00148                 nullable: {\cf17 false},\par
+00149                 defaultValue: {\cf22 ""},\par
+00150                 oldClrType: typeof({\cf18 string}),\par
+00151                 oldType: {\cf22 "nvarchar(max)"},\par
+00152                 oldNullable: {\cf17 true});\par
+00153 \par
+00154             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00155                 name: {\cf22 "FirstName"},\par
+00156                 table: {\cf22 "users"},\par
+00157                 type: {\cf22 "nvarchar(max)"},\par
+00158                 nullable: {\cf17 false},\par
+00159                 defaultValue: {\cf22 ""},\par
+00160                 oldClrType: typeof({\cf18 string}),\par
+00161                 oldType: {\cf22 "nvarchar(max)"},\par
+00162                 oldNullable: {\cf17 true});\par
+00163 \par
+00164             migrationBuilder.AlterColumn<{\cf18 string}>(\par
+00165                 name: {\cf22 "Email"},\par
+00166                 table: {\cf22 "users"},\par
+00167                 type: {\cf22 "nvarchar(max)"},\par
+00168                 nullable: {\cf17 false},\par
+00169                 defaultValue: {\cf22 ""},\par
+00170                 oldClrType: typeof({\cf18 string}),\par
+00171                 oldType: {\cf22 "nvarchar(max)"},\par
+00172                 oldNullable: {\cf17 true});\par
+00173         \}\par
+00174     \}\par
+00175 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Migrations/20240128170451_v2.Designer.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240128170451_v2.Designer.cs}
+{\xe \v Migrations/20240128170451_v2.Designer.cs}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Migrations.v2}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Migrations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+20240128170451_v2.Designer.cs\par \pard\plain 
+{\tc\tcl2 \v Migrations/20240128170451_v2.Designer.cs}
+{\xe \v Migrations/20240128170451_v2.Designer.cs}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <auto-generated />}\par
+00002 {\cf17 using }System;\par
+00003 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00004 {\cf17 using }Microsoft.EntityFrameworkCore.Infrastructure;\par
+00005 {\cf17 using }Microsoft.EntityFrameworkCore.Metadata;\par
+00006 {\cf17 using }Microsoft.EntityFrameworkCore.Migrations;\par
+00007 {\cf17 using }Microsoft.EntityFrameworkCore.Storage.ValueConversion;\par
+00008 {\cf17 using }TicketingApplicationAPI.Context;\par
+00009 \par
+00010 {\cf21 #nullable disable}\par
+00011 \par
+00012 {\cf17 namespace }TicketingApplicationAPI.Migrations\par
+00013 \{\par
+00014     [DbContext(typeof(AppDbContext))]\par
+00015     [Migration({\cf22 "20240128170451_v2"})]\par
+00016     {\cf17 partial class }v2\par
+00017     \{\par
+00018         {\cf17 protected} {\cf17 override} {\cf18 void} BuildTargetModel(ModelBuilder modelBuilder)\par
+00019         \{\par
+00020 {\cf21 #pragma warning disable 612, 618}\par
+00021             modelBuilder\par
+00022                 .HasAnnotation({\cf22 "ProductVersion"}, {\cf22 "6.0.9"})\par
+00023                 .HasAnnotation({\cf22 "Relational:MaxIdentifierLength"}, 128);\par
+00024 \par
+00025             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);\par
+00026 \par
+00027             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.Ticket"}, b =>\par
+00028                 \{\par
+00029                     b.Property<{\cf18 int}>({\cf22 "TicketID"})\par
+00030                         .ValueGeneratedOnAdd()\par
+00031                         .HasColumnType({\cf22 "int"});\par
+00032 \par
+00033                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<{\cf18 int}>({\cf22 "TicketID"}), 1L, 1);\par
+00034 \par
+00035                     b.Property<{\cf18 string}>({\cf22 "AssignedTo"})\par
+00036                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00037 \par
+00038                     b.Property<DateTime>({\cf22 "DateCreated"})\par
+00039                         .ValueGeneratedOnAdd()\par
+00040                         .HasColumnType({\cf22 "datetime2"});\par
+00041 \par
+00042                     b.Property<{\cf18 string}>({\cf22 "DateResolved"})\par
+00043                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00044 \par
+00045                     b.Property<{\cf18 string}>({\cf22 "Description"})\par
+00046                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00047 \par
+00048                     b.Property<{\cf18 string}>({\cf22 "Priority"})\par
+00049                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00050 \par
+00051                     b.Property<{\cf18 string}>({\cf22 "Subject"})\par
+00052                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00053 \par
+00054                     b.Property<{\cf18 int}>({\cf22 "UserID"})\par
+00055                         .HasColumnType({\cf22 "int"});\par
+00056 \par
+00057                     b.HasKey({\cf22 "TicketID"});\par
+00058 \par
+00059                     b.HasIndex({\cf22 "UserID"});\par
+00060 \par
+00061                     b.ToTable({\cf22 "tickets"}, ({\cf18 string}){\cf17 null});\par
+00062                 \});\par
+00063 \par
+00064             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.User"}, b =>\par
+00065                 \{\par
+00066                     b.Property<{\cf18 int}>({\cf22 "Id"})\par
+00067                         .ValueGeneratedOnAdd()\par
+00068                         .HasColumnType({\cf22 "int"});\par
+00069 \par
+00070                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<{\cf18 int}>({\cf22 "Id"}), 1L, 1);\par
+00071 \par
+00072                     b.Property<{\cf18 string}>({\cf22 "Email"})\par
+00073                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00074 \par
+00075                     b.Property<{\cf18 string}>({\cf22 "FirstName"})\par
+00076                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00077 \par
+00078                     b.Property<{\cf18 string}>({\cf22 "LastName"})\par
+00079                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00080 \par
+00081                     b.Property<{\cf18 string}>({\cf22 "Password"})\par
+00082                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00083 \par
+00084                     b.Property<{\cf18 string}>({\cf22 "Role"})\par
+00085                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00086 \par
+00087                     b.Property<{\cf18 string}>({\cf22 "Token"})\par
+00088                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00089 \par
+00090                     b.Property<{\cf18 string}>({\cf22 "Username"})\par
+00091                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00092 \par
+00093                     b.HasKey({\cf22 "Id"});\par
+00094 \par
+00095                     b.ToTable({\cf22 "users"}, ({\cf18 string}){\cf17 null});\par
+00096                 \});\par
+00097 \par
+00098             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.Ticket"}, b =>\par
+00099                 \{\par
+00100                     b.HasOne({\cf22 "TicketingApplicationAPI.Models.User"}, {\cf22 "User"})\par
+00101                         .WithMany()\par
+00102                         .HasForeignKey({\cf22 "UserID"})\par
+00103                         .OnDelete(DeleteBehavior.Cascade)\par
+00104                         .IsRequired();\par
+00105 \par
+00106                     b.Navigation({\cf22 "User"});\par
+00107                 \});\par
+00108 {\cf21 #pragma warning restore 612, 618}\par
+00109         \}\par
+00110     \}\par
+00111 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Migrations/AppDbContextModelSnapshot.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Migrations/AppDbContextModelSnapshot.cs}
+{\xe \v Migrations/AppDbContextModelSnapshot.cs}
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Migrations.AppDbContextModelSnapshot}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Migrations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+AppDbContextModelSnapshot.cs\par \pard\plain 
+{\tc\tcl2 \v Migrations/AppDbContextModelSnapshot.cs}
+{\xe \v Migrations/AppDbContextModelSnapshot.cs}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <auto-generated />}\par
+00002 {\cf17 using }System;\par
+00003 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00004 {\cf17 using }Microsoft.EntityFrameworkCore.Infrastructure;\par
+00005 {\cf17 using }Microsoft.EntityFrameworkCore.Metadata;\par
+00006 {\cf17 using }Microsoft.EntityFrameworkCore.Storage.ValueConversion;\par
+00007 {\cf17 using }TicketingApplicationAPI.Context;\par
+00008 \par
+00009 {\cf21 #nullable disable}\par
+00010 \par
+00011 {\cf17 namespace }TicketingApplicationAPI.Migrations\par
+00012 \{\par
+00013     [DbContext(typeof(AppDbContext))]\par
+00014     {\cf17 partial class }AppDbContextModelSnapshot : ModelSnapshot\par
+00015     \{\par
+00016         {\cf17 protected} {\cf17 override} {\cf18 void} BuildModel(ModelBuilder modelBuilder)\par
+00017         \{\par
+00018 {\cf21 #pragma warning disable 612, 618}\par
+00019             modelBuilder\par
+00020                 .HasAnnotation({\cf22 "ProductVersion"}, {\cf22 "6.0.9"})\par
+00021                 .HasAnnotation({\cf22 "Relational:MaxIdentifierLength"}, 128);\par
+00022 \par
+00023             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);\par
+00024 \par
+00025             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.Ticket"}, b =>\par
+00026                 \{\par
+00027                     b.Property<{\cf18 int}>({\cf22 "TicketID"})\par
+00028                         .ValueGeneratedOnAdd()\par
+00029                         .HasColumnType({\cf22 "int"});\par
+00030 \par
+00031                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<{\cf18 int}>({\cf22 "TicketID"}), 1L, 1);\par
+00032 \par
+00033                     b.Property<{\cf18 string}>({\cf22 "AssignedTo"})\par
+00034                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00035 \par
+00036                     b.Property<DateTime>({\cf22 "DateCreated"})\par
+00037                         .ValueGeneratedOnAdd()\par
+00038                         .HasColumnType({\cf22 "datetime2"});\par
+00039 \par
+00040                     b.Property<{\cf18 string}>({\cf22 "DateResolved"})\par
+00041                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00042 \par
+00043                     b.Property<{\cf18 string}>({\cf22 "Description"})\par
+00044                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00045 \par
+00046                     b.Property<{\cf18 string}>({\cf22 "Priority"})\par
+00047                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00048 \par
+00049                     b.Property<{\cf18 string}>({\cf22 "Subject"})\par
+00050                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00051 \par
+00052                     b.Property<{\cf18 int}>({\cf22 "UserID"})\par
+00053                         .HasColumnType({\cf22 "int"});\par
+00054 \par
+00055                     b.HasKey({\cf22 "TicketID"});\par
+00056 \par
+00057                     b.HasIndex({\cf22 "UserID"});\par
+00058 \par
+00059                     b.ToTable({\cf22 "tickets"}, ({\cf18 string}){\cf17 null});\par
+00060                 \});\par
+00061 \par
+00062             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.User"}, b =>\par
+00063                 \{\par
+00064                     b.Property<{\cf18 int}>({\cf22 "Id"})\par
+00065                         .ValueGeneratedOnAdd()\par
+00066                         .HasColumnType({\cf22 "int"});\par
+00067 \par
+00068                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<{\cf18 int}>({\cf22 "Id"}), 1L, 1);\par
+00069 \par
+00070                     b.Property<{\cf18 string}>({\cf22 "Email"})\par
+00071                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00072 \par
+00073                     b.Property<{\cf18 string}>({\cf22 "FirstName"})\par
+00074                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00075 \par
+00076                     b.Property<{\cf18 string}>({\cf22 "LastName"})\par
+00077                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00078 \par
+00079                     b.Property<{\cf18 string}>({\cf22 "Password"})\par
+00080                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00081 \par
+00082                     b.Property<{\cf18 string}>({\cf22 "Role"})\par
+00083                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00084 \par
+00085                     b.Property<{\cf18 string}>({\cf22 "Token"})\par
+00086                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00087 \par
+00088                     b.Property<{\cf18 string}>({\cf22 "Username"})\par
+00089                         .HasColumnType({\cf22 "nvarchar(max)"});\par
+00090 \par
+00091                     b.HasKey({\cf22 "Id"});\par
+00092 \par
+00093                     b.ToTable({\cf22 "users"}, ({\cf18 string}){\cf17 null});\par
+00094                 \});\par
+00095 \par
+00096             modelBuilder.Entity({\cf22 "TicketingApplicationAPI.Models.Ticket"}, b =>\par
+00097                 \{\par
+00098                     b.HasOne({\cf22 "TicketingApplicationAPI.Models.User"}, {\cf22 "User"})\par
+00099                         .WithMany()\par
+00100                         .HasForeignKey({\cf22 "UserID"})\par
+00101                         .OnDelete(DeleteBehavior.Cascade)\par
+00102                         .IsRequired();\par
+00103 \par
+00104                     b.Navigation({\cf22 "User"});\par
+00105                 \});\par
+00106 {\cf21 #pragma warning restore 612, 618}\par
+00107         \}\par
+00108     \}\par
+00109 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Models/Ticket.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Models/Ticket.cs}
+{\xe \v Models/Ticket.cs}
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Models.Ticket}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Models}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Ticket.cs\par \pard\plain 
+{\tc\tcl2 \v Models/Ticket.cs}
+{\xe \v Models/Ticket.cs}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System;\par
+00002 {\cf17 using }System.ComponentModel.DataAnnotations;\par
+00003 {\cf17 using }System.ComponentModel.DataAnnotations.Schema;\par
+00004 \par
+00005 {\cf17 namespace }TicketingApplicationAPI.Models\par
+00006 \{\par
+00007     {\cf17 public} {\cf17 class }Ticket\par
+00008     \{\par
+00009         [Key]\par
+00010         {\cf17 public} {\cf18 int} TicketID \{ {\cf17 get}; {\cf17 set}; \}\par
+00011 \par
+00012         {\cf20 // Foreign key property}\par
+00013         {\cf17 public} {\cf18 int}? UserID \{ {\cf17 get}; {\cf17 set}; \}\par
+00014 \par
+00015         [ForeignKey({\cf22 "UserID"})]\par
+00016         {\cf17 public} {\cf17 virtual} User User \{ {\cf17 get}; {\cf17 set}; \}\par
+00017 \par
+00018         {\cf17 public} {\cf18 int}? AssignedRoleID \{ {\cf17 get}; {\cf17 set}; \}\par
+00019 \par
+00020 \par
+00021         {\cf17 public} {\cf18 string}? Status \{ {\cf17 get}; {\cf17 set}; \}\par
+00022         {\cf17 public} {\cf18 string} Subject \{ {\cf17 get}; {\cf17 set}; \}\par
+00023         {\cf17 public} {\cf18 string} Priority \{ {\cf17 get}; {\cf17 set}; \}\par
+00024         {\cf17 public} {\cf18 string} Description \{ {\cf17 get}; {\cf17 set}; \}\par
+00025         {\cf17 public} {\cf18 int} AssignedTo \{ {\cf17 get}; {\cf17 set}; \} {\cf20 // will be foreign key }\par
+00026 \par
+00027        \par
+00028 \par
+00029         {\cf20 // Use DateTime for dateCreated}\par
+00030         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]\par
+00031         {\cf17 public} DateTime? DateCreated \{ {\cf17 get}; {\cf17 set}; \} = DateTime.UtcNow.AddHours(1); {\cf20 /*DateTime.UtcNow;*/}\par
+00032         {\cf17 public} {\cf18 string} DateResolved \{ {\cf17 get}; {\cf17 set}; \}\par
+00033 \par
+00034         {\cf20 // Additional properties to access user's first and last names}\par
+00035         [NotMapped] {\cf20 // Not mapped to the database}\par
+00036         {\cf17 public} {\cf18 string} UserFirstName => User?.FirstName;\par
+00037 \par
+00038         [NotMapped] {\cf20 // Not mapped to the database}\par
+00039         {\cf17 public} {\cf18 string} UserLastName => User?.LastName;\par
+00040 \par
+00041         {\cf20 // Get formatted date string}\par
+00042         [NotMapped] {\cf20 // Not mapped to the database}\par
+00043         {\cf17 public} {\cf18 string} FormattedDateCreated => DateCreated?.ToString({\cf22 "dddd, dd MMMM yyyy h:mm tt"});\par
+00044 \par
+00045 \par
+00046     \}\par
+00047 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Models/User.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Models/User.cs}
+{\xe \v Models/User.cs}
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TicketingApplicationAPI.Models.User}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b TicketingApplicationAPI.Models}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+User.cs\par \pard\plain 
+{\tc\tcl2 \v Models/User.cs}
+{\xe \v Models/User.cs}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.ComponentModel.DataAnnotations;\par
+00002 \par
+00003 {\cf17 namespace }TicketingApplicationAPI.Models\par
+00004 \{\par
+00005     {\cf17 public} {\cf17 class }User\par
+00006     \{\par
+00007         [Key]\par
+00008         {\cf17 public} {\cf18 int} Id \{ {\cf17 get}; {\cf17 set}; \}\par
+00009         {\cf17 public} {\cf18 string} FirstName \{  {\cf17 get}; {\cf17 set}; \}\par
+00010         {\cf17 public} {\cf18 string} LastName \{ {\cf17 get}; {\cf17 set}; \}\par
+00011         {\cf17 public} {\cf18 string} Username \{ {\cf17 get}; {\cf17 set}; \}\par
+00012         {\cf17 public} {\cf18 string} Password \{ {\cf17 get}; {\cf17 set}; \}\par
+00013 \par
+00014         {\cf17 public} {\cf18 string} Token \{ {\cf17 get}; {\cf17 set}; \} \par
+00015         {\cf17 public} {\cf18 string} Role \{ {\cf17 get}; {\cf17 set}; \} \par
+00016 \par
+00017         {\cf17 public} {\cf18 int}? RoleID \{ {\cf17 get}; {\cf17 set}; \}\par
+00018 \par
+00019         {\cf17 public} {\cf18 string} Email \{ {\cf17 get}; {\cf17 set}; \}\par
+00020     \}\par
+00021 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs}
+{\xe \v obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs}
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+.NETCoreApp,Version=v6.0.AssemblyAttributes.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs}
+{\xe \v obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <autogenerated />}\par
+00002 {\cf17 using }System;\par
+00003 {\cf17 using }System.Reflection;\par
+00004 [assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute({\cf22 ".NETCoreApp,Version=v6.0"}, FrameworkDisplayName = {\cf22 ".NET 6.0"})]\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net6.0/TicketingApplicationAPI.AssemblyInfo.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/TicketingApplicationAPI.AssemblyInfo.cs}
+{\xe \v obj/Debug/net6.0/TicketingApplicationAPI.AssemblyInfo.cs}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.AssemblyInfo.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/TicketingApplicationAPI.AssemblyInfo.cs}
+{\xe \v obj/Debug/net6.0/TicketingApplicationAPI.AssemblyInfo.cs}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 //------------------------------------------------------------------------------}\par
+00002 {\cf20 // <auto-generated>}\par
+00003 {\cf20 //     This code was generated by a tool.}\par
+00004 {\cf20 //     Runtime Version:4.0.30319.42000}\par
+00005 {\cf20 //}\par
+00006 {\cf20 //     Changes to this file may cause incorrect behavior and will be lost if}\par
+00007 {\cf20 //     the code is regenerated.}\par
+00008 {\cf20 // </auto-generated>}\par
+00009 {\cf20 //------------------------------------------------------------------------------}\par
+00010 \par
+00011 {\cf17 using }System;\par
+00012 {\cf17 using }System.Reflection;\par
+00013 \par
+00014 [assembly: System.Reflection.AssemblyCompanyAttribute({\cf22 "TicketingApplicationAPI"})]\par
+00015 [assembly: System.Reflection.AssemblyConfigurationAttribute({\cf22 "Debug"})]\par
+00016 [assembly: System.Reflection.AssemblyFileVersionAttribute({\cf22 "1.0.0.0"})]\par
+00017 [assembly: System.Reflection.AssemblyInformationalVersionAttribute({\cf22 "1.0.0"})]\par
+00018 [assembly: System.Reflection.AssemblyProductAttribute({\cf22 "TicketingApplicationAPI"})]\par
+00019 [assembly: System.Reflection.AssemblyTitleAttribute({\cf22 "TicketingApplicationAPI"})]\par
+00020 [assembly: System.Reflection.AssemblyVersionAttribute({\cf22 "1.0.0.0"})]\par
+00021 \par
+00022 {\cf20 // Generated by the MSBuild WriteCodeFragment class.}\par
+00023 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net6.0/TicketingApplicationAPI.GlobalUsings.g.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/TicketingApplicationAPI.GlobalUsings.g.cs}
+{\xe \v obj/Debug/net6.0/TicketingApplicationAPI.GlobalUsings.g.cs}
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.GlobalUsings.g.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/TicketingApplicationAPI.GlobalUsings.g.cs}
+{\xe \v obj/Debug/net6.0/TicketingApplicationAPI.GlobalUsings.g.cs}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 // <auto-generated/>}\par
+00002 global {\cf17 using }global::Microsoft.AspNetCore.Builder;\par
+00003 global {\cf17 using }global::Microsoft.AspNetCore.Hosting;\par
+00004 global {\cf17 using }global::Microsoft.AspNetCore.Http;\par
+00005 global {\cf17 using }global::Microsoft.AspNetCore.Routing;\par
+00006 global {\cf17 using }global::Microsoft.Extensions.Configuration;\par
+00007 global {\cf17 using }global::Microsoft.Extensions.DependencyInjection;\par
+00008 global {\cf17 using }global::Microsoft.Extensions.Hosting;\par
+00009 global {\cf17 using }global::Microsoft.Extensions.Logging;\par
+00010 global {\cf17 using }global::System;\par
+00011 global {\cf17 using }global::System.Collections.Generic;\par
+00012 global {\cf17 using }global::System.IO;\par
+00013 global {\cf17 using }global::System.Linq;\par
+00014 global {\cf17 using }global::System.Net.Http;\par
+00015 global {\cf17 using }global::System.Net.Http.Json;\par
+00016 global {\cf17 using }global::System.Threading;\par
+00017 global {\cf17 using }global::System.Threading.Tasks;\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+obj/Debug/net6.0/TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs}
+{\xe \v obj/Debug/net6.0/TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs\par \pard\plain 
+{\tc\tcl2 \v obj/Debug/net6.0/TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs}
+{\xe \v obj/Debug/net6.0/TicketingApplicationAPI.MvcApplicationPartsAssemblyInfo.cs}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf20 //------------------------------------------------------------------------------}\par
+00002 {\cf20 // <auto-generated>}\par
+00003 {\cf20 //     This code was generated by a tool.}\par
+00004 {\cf20 //     Runtime Version:4.0.30319.42000}\par
+00005 {\cf20 //}\par
+00006 {\cf20 //     Changes to this file may cause incorrect behavior and will be lost if}\par
+00007 {\cf20 //     the code is regenerated.}\par
+00008 {\cf20 // </auto-generated>}\par
+00009 {\cf20 //------------------------------------------------------------------------------}\par
+00010 \par
+00011 {\cf17 using }System;\par
+00012 {\cf17 using }System.Reflection;\par
+00013 \par
+00014 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute({\cf22 "Swashbuckle.AspNetCore.SwaggerGen"})]\par
+00015 \par
+00016 {\cf20 // Generated by the MSBuild WriteCodeFragment class.}\par
+00017 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Program.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v Program.cs}
+{\xe \v Program.cs}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+builder.Services. {\b AddControllers} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+builder.Services. {\b AddEndpointsApiExplorer} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+builder.Services. {\b AddSwaggerGen} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+builder.Services. {\b AddCors} (option=> \{ option.AddPolicy("MyPolicy", {\b builder}=> \{ builder.AllowAnyOrigin() .AllowAnyMethod() .AllowAnyHeader();\});\})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+builder.Services. {\b AddDbContext< AppDbContext >} (options=> \{ options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnStr"));\})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+builder.Services. {\b AddAuthentication} (x=> \{ x.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;x.DefaultChallengeScheme=JwtBearerDefaults.AuthenticationScheme;\}).AddJwtBearer(x\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b if} (app.Environment.IsDevelopment())\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+app. {\b UseHttpsRedirection} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+app. {\b UseCors} ("MyPolicy")\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+app. {\b UseAuthentication} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+app. {\b UseAuthorization} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+app. {\b MapControllers} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+app. {\b Run} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+var {\b builder} = WebApplication.CreateBuilder(args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+var {\b app} = builder.Build()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v AddAuthentication\:Program.cs}
+{\xe \v Program.cs\:AddAuthentication}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+builder.Services. AddAuthentication (x , \{ x.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;x.DefaultChallengeScheme=JwtBearerDefaults.AuthenticationScheme;\} )}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v AddControllers\:Program.cs}
+{\xe \v Program.cs\:AddControllers}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+builder.Services. AddControllers ()}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v AddCors\:Program.cs}
+{\xe \v Program.cs\:AddCors}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+builder.Services. AddCors (option , \{ option.AddPolicy("MyPolicy", {\b builder}=> \{ builder.AllowAnyOrigin() .AllowAnyMethod() .AllowAnyHeader();\});\} )}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v AddDbContext< AppDbContext >\:Program.cs}
+{\xe \v Program.cs\:AddDbContext< AppDbContext >}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+builder.Services. AddDbContext< {\b AppDbContext} > (options , \{ options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnStr"));\} )}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v AddEndpointsApiExplorer\:Program.cs}
+{\xe \v Program.cs\:AddEndpointsApiExplorer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+builder.Services. AddEndpointsApiExplorer ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v AddSwaggerGen\:Program.cs}
+{\xe \v Program.cs\:AddSwaggerGen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+builder.Services. AddSwaggerGen ()}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v if\:Program.cs}
+{\xe \v Program.cs\:if}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+if (app::Environment::IsDevelopment() )}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 53} of file {\b Program.cs}.}\par
+}
+{\xe \v MapControllers\:Program.cs}
+{\xe \v Program.cs\:MapControllers}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+app. MapControllers ()}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Run\:Program.cs}
+{\xe \v Program.cs\:Run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+app. Run ()}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v UseAuthentication\:Program.cs}
+{\xe \v Program.cs\:UseAuthentication}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+app. UseAuthentication ()}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v UseAuthorization\:Program.cs}
+{\xe \v Program.cs\:UseAuthorization}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+app. UseAuthorization ()}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v UseCors\:Program.cs}
+{\xe \v Program.cs\:UseCors}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+app. UseCors ("MyPolicy" )}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v UseHttpsRedirection\:Program.cs}
+{\xe \v Program.cs\:UseHttpsRedirection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+app. UseHttpsRedirection ()}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v app\:Program.cs}
+{\xe \v Program.cs\:app}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+var app = builder.Build()}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 50} of file {\b Program.cs}.}\par
+}
+{\xe \v builder\:Program.cs}
+{\xe \v Program.cs\:builder}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+var builder = WebApplication.CreateBuilder(args)}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 8} of file {\b Program.cs}.}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Program.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+Go to the documentation of this file.\par
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }Microsoft.AspNetCore.Authentication.JwtBearer;\par
+00002 {\cf17 using }Microsoft.EntityFrameworkCore;\par
+00003 {\cf17 using }Microsoft.Extensions.DependencyInjection;\par
+00004 {\cf17 using }Microsoft.IdentityModel.Tokens;\par
+00005 {\cf17 using }System.Text;\par
+00006 {\cf17 using }TicketingApplicationAPI.Context;\par
+00007 \par
+00008 var builder = WebApplication.CreateBuilder(args);\par
+00009 \par
+00010 {\cf20 // Add services to the container.}\par
+00011 \par
+00012 builder.Services.AddControllers();\par
+00013 {\cf20 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle}\par
+00014 builder.Services.AddEndpointsApiExplorer();\par
+00015 builder.Services.AddSwaggerGen();\par
+00016 builder.Services.AddCors(option =>\par
+00017 \{\par
+00018 option.AddPolicy({\cf22 "MyPolicy"}, builder => \par
+00019        \{\par
+00020            builder.AllowAnyOrigin()\par
+00021            .AllowAnyMethod()\par
+00022            .AllowAnyHeader();\par
+00023          \par
+00024 \par
+00025     \});\par
+00026 \});\par
+00027 builder.Services.AddDbContext<AppDbContext>(options =>\par
+00028 \{\par
+00029     options.UseSqlServer(builder.Configuration.GetConnectionString({\cf22 "SqlServerConnStr"}));\par
+00030 \});\par
+00031 \par
+00032 \par
+00033 builder.Services.AddAuthentication(x =>\par
+00034 \{\par
+00035     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;\par
+00036     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;\par
+00037 \}).AddJwtBearer(x =>\par
+00038 \{\par
+00039     x.RequireHttpsMetadata = {\cf17 false};\par
+00040     x.SaveToken = {\cf17 true};\par
+00041     x.TokenValidationParameters = {\cf17 new} TokenValidationParameters\par
+00042     \{\par
+00043         ValidateIssuerSigningKey = {\cf17 true},\par
+00044         IssuerSigningKey = {\cf17 new} SymmetricSecurityKey(Encoding.UTF8.GetBytes({\cf22 "veryverysecret....."})),\par
+00045         ValidateAudience = {\cf17 false},\par
+00046         ValidateIssuer = {\cf17 false}\par
+00047     \};\par
+00048 \});\par
+00049 \par
+00050 var app = builder.Build();\par
+00051 \par
+00052 {\cf20 // Configure the HTTP request pipeline.}\par
+00053 {\cf19 if} (app.Environment.IsDevelopment())\par
+00054 \{\par
+00055     app.UseSwagger();\par
+00056     app.UseSwaggerUI();\par
+00057 \}\par
+00058 \par
+00059 app.UseHttpsRedirection();\par
+00060 app.UseCors({\cf22 "MyPolicy"});\par
+00061 app.UseAuthentication();\par
+00062 \par
+00063 app.UseAuthorization();\par
+00064 \par
+00065 app.MapControllers();\par
+00066 \par
+00067 app.Run();\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
