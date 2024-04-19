@@ -21,6 +21,8 @@ namespace TicketingApplicationAPI.Models
         public string Description { get; set; }
         public int AssignedTo { get; set; } // will be foreign key 
 
+       
+
         // Use DateTime for dateCreated
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime? DateCreated { get; set; } = DateTime.UtcNow.AddHours(1); /*DateTime.UtcNow;*/
