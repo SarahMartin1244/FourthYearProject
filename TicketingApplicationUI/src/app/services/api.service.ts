@@ -42,5 +42,12 @@ export class ApiService {
   updateassignqueue() {
     return this.http.get(`${this.ticketUrl}updateassignqueue`);
   }
-  
+
+  resolveTicket(ticketId: number | null) {
+    if (ticketId !== null) {
+      return this.http.post(`${this.ticketUrl}resolve/${ticketId}`, {});
+    } else {
+      return throwError('Invalid ticket ID');
+    }
+  }
 }

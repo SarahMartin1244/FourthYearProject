@@ -252,6 +252,49 @@ namespace TicketingApplicationAPI.Controllers
         }
 
 
+        // create an api called resolve that will allow a user to resolve a ticket we will pass the ticket id as a parameter and the user id will be taken from the logged in user when a user resolves a ticket the status field should be updated to resolved and the date resolved field should be updated with the current date and time
+        [HttpPost("resolve/{ticketId}")]
+        [Authorize]
+        public IActionResult ResolveTicket(int ticketId)
+        {
+            // Get the logged-in user's ID
+            var loggedInUserId = GetLoggedInUserId();
+
+            if (!loggedInUserId.HasValue)
+            {
+                // User is not logged in
+                return Unauthorized(new { Message = "User not logged in" });
+            }
+
+            // Retrieve the ticket from the database
+            var ticket = _authContext.Tickets.FirstOrDefault(t => t.TicketID == ticketId);
+
+            if (ticket == null)
+            {
+                // Ticket not found
+                return NotFound(new { Message = "Ticket not found" });
+            }
+
+            // Check if the ticket is assigned to the logged-in user
+            if (ticket.AssignedTo != loggedInUserId.Value)
+            {
+                // Ticket is not assigned to the user
+                return Unauthorized(new { Message = "Ticket not assigned to user" });
+            }
+
+            // Update the ticket status to "Resolved"
+            ticket.Status = "Resolved";
+
+            // Update the date resolved to the current date and time
+            ticket.DateResolved = DateTime.UtcNow.ToString("dddd, dd MMMM yyyy h:mm tt");
+
+            // Update the ticket in the database
+            _authContext.Tickets.Update(ticket);
+            _authContext.SaveChanges();
+
+            return Ok(new { Message = "Ticket resolved" });
+        }
+
 
     }
 }
